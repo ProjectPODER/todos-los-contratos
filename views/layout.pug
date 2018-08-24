@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title La parte contratante
+    link(rel='stylesheet', href='resources/semantic-ui/dist/semantic.css')
+    link(rel='stylesheet', href='resources/datatables.net-se/css/dataTables.semanticui.css')
+    link(rel='stylesheet', href='resources/chartist/dist/chartist.min.css')
+    link(rel='stylesheet', href='/stylesheets/chartist-plugin-tooltip.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    block content
+    
+    block javascript
+        script(src='resources/jquery/dist/jquery.min.js')
+        script(src='resources/semantic-ui/dist/semantic.js')
+        script(src='resources/datatables.net/js/jquery.dataTables.js')
+        script(src='resources/datatables.net-se/js/dataTables.semanticui.js')
+        script(src='javascripts/scrollspy.js')
+        script(src='resources/chartist/dist/chartist.min.js')
+        script(src='javascripts/chartist-plugin-tooltip.js')
+        script(src='javascripts/main.js')
+        script(src='javascripts/datatables-data.js')
+        script(src='javascripts/chart-data.js')

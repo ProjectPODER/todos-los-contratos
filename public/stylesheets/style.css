@@ -1,0 +1,219 @@
+a {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+.mt-3{
+    margin-top: 3em !important;
+}
+.header-link {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #DB2828;
+}
+.header-link:hover {
+    color: #DB2828;
+}
+.down-icon {
+    color: white;
+    font-size: 3em;
+    opacity: 0.6;
+}
+.down-icon i {
+    margin-top: 1em;
+}
+.down-icon:hover {
+    color: #DB2828;
+}
+.hidden.menu {
+    display: none;
+}
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+}initial
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+.masthead h1.ui.header {
+/*margin-top: 3em;*/
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+.masthead h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+.ui.text.container {
+    max-width: 950px!important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+.quote.stripe.segment {
+    padding: 0em;
+}
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.footer.segment {
+    padding: 5em 0em;
+}
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+.main-background{
+    background-image: url("../images/gif.gif") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100vh;
+}
+.mainbg-overlay {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    /*background: -webkit-linear-gradient(left, rgba(192,58,43,1) 0%, rgba(208,75,34,1) 100%);*/
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /*opacity: 0.7;*/
+}
+.masthead.segment {
+    min-height: auto;
+}
+.ui.card {
+    width: 100%;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;*/
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.table-divider td {
+    background-color: #f9fafb;
+    height: 20px;
+}
+.ui.card>.content>.description {
+    margin-top: 2em !important;
+    margin-bottom: 3em;
+}
+.ui.card>.content>.header, .ui.cards>.card>.content>.header {
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+body.pushable>.pusher {
+    background-color: #fafafa;
+}
+.ui.card>.content p, .ui.cards>.card>.content p {
+    letter-spacing: .01em;
+    line-height: 1.5;
+}
+.vertical-aligned-center {
+    position: absolute;
+    top: 22%;
+    left: 26.6%;
+}
+.ui.secondary.inverted.pointing.menu .active.item {
+    border-color: #db2828;
+}
+/*.ui.menu .active.item {
+    background: #db2828!important;
+    color: rgba(0,0,0,.95);
+    font-weight: 400;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}*/
+
+.side-menu {
+    position: fixed;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    top: calc(50% - 155px);
+    left: calc(100% - 60px);
+    border: 0;
+    z-index: 9999;
+    opacity: 0;
+}
+.side-menu i {
+    color: #DB2828;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.side-menu-item {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 18px 8px 18px 8px;
+    cursor: pointer;
+    transition: .25s all;
+    vertical-align: middle;
+    border: thin solid #DB2828;
+    border-width: 2px;
+    border-radius: 50000px;
+}
+.side-menu-item:hover{
+    background: #DB2828;
+
+}
+
+.side-menu.active>a{
+    background: #DB2828;
+}
+
+.side-menu>ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}

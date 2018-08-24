@@ -1,0 +1,113 @@
+[
+    {
+        "party": {
+            "id": "simple-name",
+            "name": "Simple Name Party",
+            "type": "Municipio",
+            "ranking": 2
+        },
+        "cirteria_score": {
+            "total_score": 0.48,
+            "transparencia": 0.53,
+            "temporalidad": 0.58,
+            "competitividad": 0.2,
+            "trazabilidad": 0.8
+        },
+        "years": [
+            {
+                "year": 2018,
+                "cirteria_score": {
+                    "total_score": 0.5,
+                    "transparencia": 0.2,
+                    "temporalidad": 0.6,
+                    "competitividad": 0.4,
+                    "trazabilidad": 0.4
+                }
+            },
+            {
+                "year": 2017,
+                "cirteria_score": {
+                    "total_score": 0.1,
+                    "transparencia": 0.45,
+                    "temporalidad": 0.95,
+                    "competitividad": 0.25,
+                    "trazabilidad": 0.65
+                }
+            }
+        ]
+    },
+    {
+        "party": {
+            "id": "simple-name",
+            "name": "Simple Name Party",
+            "type": "Municipio",
+            "ranking": 1
+        },
+        "cirteria_score": {
+            "total_score": 0.7,
+            "transparencia": 0.5,
+            "temporalidad": 0.8,
+            "competitividad": 0.4,
+            "trazabilidad": 0.9
+        },
+        "years": [
+            {
+                "year": 2018,
+                "cirteria_score": {
+                    "total_score": 0.7,
+                    "transparencia": 0.5,
+                    "temporalidad": 0.8,
+                    "competitividad": 0.4,
+                    "trazabilidad": 0.9
+                }
+            },
+            {
+                "year": 2017,
+                "cirteria_score": {
+                    "total_score": 0.75,
+                    "transparencia": 0.55,
+                    "temporalidad": 0.85,
+                    "competitividad": 0.45,
+                    "trazabilidad": 0.95
+                }
+            }
+        ]
+    },
+    {
+        "party": {
+            "id": "simple-name",
+            "name": "Simple Name Party",
+            "type": "Municipio",
+            "ranking": 3
+        },
+        "cirteria_score": {
+            "total_score": 0.29,
+            "transparencia": 0.5,
+            "temporalidad": 0.8,
+            "competitividad": 0.6,
+            "trazabilidad": 0.4
+        },
+        "years": [
+            {
+                "year": 2018,
+                "cirteria_score": {
+                    "total_score": 0.3,
+                    "transparencia": 0.7,
+                    "temporalidad": 0.3,
+                    "competitividad": 0.8,
+                    "trazabilidad": 0.8
+                }
+            },
+            {
+                "year": 2017,
+                "cirteria_score": {
+                    "total_score": 0.17,
+                    "transparencia": 0.5,
+                    "temporalidad": 0.3,
+                    "competitividad": 0.4,
+                    "trazabilidad": 0.9
+                }
+            }
+        ]
+    }
+];

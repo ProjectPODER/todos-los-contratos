@@ -1,0 +1,619 @@
+extends layout
+
+block content
+  <!-- Following Menu-->
+    #top
+    .ui.huge.top.fixed.hidden.inverted.menu
+      .ui.container
+        a.active.red.item Inicio
+        a.red.item Metodología
+        a.red.item Unidades Compradoras
+    <!--Sidebar Menu-->
+    .ui.vertical.inverted.sidebar.menu
+      a.active.item Inicio
+      a.item Metodología
+      a.item Unidades Compradoras
+    nav.side-menu
+        ul
+            li
+                a.anchor(href='#top')
+                    div(data-inverted='' data-tooltip='Inicio' data-position='left center')
+                        i.chevron.circle.up.icon
+            li
+                a.anchor.side-menu-item(href='#ranking-dependencias' data-inverted='' data-tooltip='Ranking de Dependencias' data-position='left center')                
+            li
+                a.anchor.side-menu-item(href='#ranking-historico' data-inverted='' data-tooltip='Ranking Histórico' data-position='left center')                
+            li
+                a.anchor.side-menu-item(href='#ranking-estados' data-inverted='' data-tooltip='Ranking de Estados' data-position='left center')                
+            li
+                a.anchor.side-menu-item(href='#ranking-municipios' data-inverted='' data-tooltip='Ranking de Municipios' data-position='left center')                
+            li
+                a.anchor.side-menu-item(href='#ranking-bancos' data-inverted='' data-tooltip='Ranking de Bancos' data-position='left center')  
+    //- nav.side-menu
+    //-     ul.nav.navbar-nav
+    //-       li
+    //-         a(href='#ranking-dependencias') Section 1
+    //-       li
+    //-         a(href='#ranking-historico') Section 2
+    //-       li
+    //-         a(href='#ranking-estados') Section 3          
+
+    <!--Page Contents-->
+    .pusher
+      .ui.inverted.vertical.masthead.center.aligned.segment.main-background
+        .mainbg-overlay
+          .ui.container
+            .ui.huge.secondary.inverted.pointing.menu
+              a.toc.item
+                i.sidebar.icon
+              a.active.item Inicio
+              a.item Metodología
+              a.item Unidades Compradoras
+          .ui.text.container
+            h1.ui.inverted.header
+              | TODOS LOS CONTRATOS
+            h2
+              | "Estos son mis contratos, y si no les gustan... tengo otros" podría haber dicho  
+
+              a.header-link(href='https://www.youtube.com/watch?v=4XEp-mZ2bG4' target='_blank')
+                | Groucho Marx  
+              | (cómico estadounidense de principio de siglo XX). Siguiendo esta máxima, la administración mexicana va publicando portales de contrataciones abiertas en distintas webs con datos que no coinciden y dificultan la rendición de cuentas.
+
+            h2
+              | Desde QuiénEsQuién.Wiki hemos recopilado, limpiado y sistematizado XXXX contratos federales, estatales y municipales de XXX fuentes de datos para facilitar su búsqueda y consulta. Además evaluamos la forma en que cada fuente y dependencia publica los datos e indicamos cómo pueden mejorar. 
+            //- a.ui.large.inverted.gray.button.mt-3(href='https://www.youtube.com/watch?v=4XEp-mZ2bG4', target='_blank')
+            //-   | Ver video
+            a.down-icon(href="#ranking-dependencias")
+                i.chevron.down.icon
+
+      .ui.vertical.stripe.segment
+        .ui.container#ranking-dependencias
+          .ui.card
+            .content
+              h3.ui.red.header Ranking de Dependencias
+              .description
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
+              table#tableTopDependencies.ui.celled.red.table.stackable
+                thead
+                  tr
+                    th Ranking
+                    th Organización
+                    th Transparencia
+                    th Temporalidad
+                    th Competitividad
+                    th Trazabilidad
+                    th Total
+                
+              table#tableBottomDependencies.ui.celled.red.table.stackable
+                thead
+                  tr
+                    th Ranking
+                    th Municipio
+                    th Transparencia
+                    th Temporalidad
+                    th Competitividad
+                    th Trazabilidad
+                    th Total
+                
+            .extra.content.center.aligned
+              button.ui.inverted.red.button Ver más
+      .ui.vertical.stripe.segment
+        .ui.container#ranking-historico
+          .ui.card
+            .content
+              h3.ui.red.header Ranking Histórico
+              .description
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
+            .ct-chart
+            //- .image
+            //-   img(src='images/chart-historico.png')
+      .ui.vertical.stripe.segment
+        .ui.container#ranking-estados
+          .ui.card
+            .content
+              h3.ui.red.header Ranking de Estados
+              .description
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
+              #context1
+                .ui.red.two.item.pointing.menu
+                  a.item.active(data-tab='mapa') Mapa
+                  a.item(data-tab='lista') Lista
+                .ui.active.tab(data-tab='mapa')
+                  .image.center.aligned
+                    img(src='images/map.png')
+                .ui.tab(data-tab='lista')
+                  table.datatable.ui.celled.red.table.stackable
+                    thead
+                      tr
+                        th Ranking
+                        th Estado
+                        th Trans
+                        th Temp
+                        th Comp
+                        th Traz
+                        th Status
+                    tbody
+                      tr
+                        td 1
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 2
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 3
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 4
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 5
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 6
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 7
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 8
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 9
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 10
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 11
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 12
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 13
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 14
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 15
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 16
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 17
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 18
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 19
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 20
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 21
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 22
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 23
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 24
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 25
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 26
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 27
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 28
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 29
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 30
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 31
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                      tr
+                        td 32
+                        td Nombre
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                        td Cell
+                  .extra.content.center.aligned
+                    button.ui.inverted.red.button Ver más
+      .ui.vertical.stripe.segment
+        .ui.container#ranking-municipios
+          .ui.card
+            .content
+              h3.ui.red.header Ranking de Municipios
+              .description
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
+              table.datatable.ui.celled.red.table.stackable
+                thead
+                  tr
+                    th Ranking
+                    th Municipio
+                    th Transparencia
+                    th Temporalidad
+                    th Competitividad
+                    th Trazabilidad
+                    th Status
+                tbody
+                  tr
+                    td 1
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 2
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 3
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 4
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 5
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr.table-divider
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr
+                    td 96
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 97
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 98
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 99
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 100
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+            .extra.content.center.aligned
+              button.ui.inverted.red.button Ver más
+      .ui.vertical.stripe.segment
+        .ui.container#ranking-bancos
+          .ui.card
+            .content
+              h3.ui.red.header Ranking de Bancos de Inversión
+              .description
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
+              table.datatable.ui.celled.red.table.stackable
+                thead
+                  tr
+                    th Ranking
+                    th Organización
+                    th Transparencia
+                    th Temporalidad
+                    th Competitividad
+                    th Trazabilidad
+                    th Status
+                tbody
+                  tr
+                    td 1
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 2
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 3
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 4
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 5
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr.table-divider
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                    td
+                  tr
+                    td 96
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 97
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 98
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 99
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                  tr
+                    td 100
+                    td Nombre
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+                    td Cell
+            .extra.content.center.aligned
+              button.ui.inverted.red.button Ver más
+      .ui.inverted.vertical.footer.segment
+        .ui.text.container.center.aligned
+          h4.ui.inverted.header Proyecto promovido por
+          img(src='images/logo-poder.png', alt='')
+
