@@ -3,7 +3,7 @@
 
 ### Código
 
-    http://gitlab.rindecuentas.org/MC/todos-los-contratos
+    git clone http://gitlab.rindecuentas.org/equipo-qqw/todos-los-contratos
     cd contratosapp
 
 ### Configurar la base de datos
