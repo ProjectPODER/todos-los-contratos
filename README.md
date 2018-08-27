@@ -7,8 +7,6 @@
     cd contratosapp
 
 ### Configurar la base de datos
-
-    En la terminal:
     
     mongo
     use quienesquienwiki
