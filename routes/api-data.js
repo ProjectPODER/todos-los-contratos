@@ -40,7 +40,12 @@ router.get('/', function(req, res, next) {
           res.send(result);
         }
       });
-    }
+
+      // find({ public: true, type: "uc"}) --- pagina de unidades compradoras
+      // find({ public: false}) --- pagina de suppliers (oculta)
+      // find({ public: true}, aggregate: {govLevel}) --- municipios y estados
+      // find({ public: true}, aggregate: {dependency}) --- dependencias
+      }
   })
   // --Se cierra conexión a mongo
 });
