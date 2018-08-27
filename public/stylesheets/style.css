@@ -194,6 +194,22 @@ body.pushable>.pusher {
     padding-left: 0;
 }
 
+table#tableTopDependencies.dataTable.table thead th.sorting:after,
+table#tableBottomDependencies.dataTable.table thead th.sorting:after, 
+table#tableTopDependencies.dataTable.table thead th.sorting_asc:after,
+table#tableBottomDependencies.dataTable.table thead th.sorting_asc:after, 
+table#tableTopDependencies.dataTable.table thead th.sorting_desc:after,
+table#tableBottomDependencies.dataTable.table thead th.sorting_desc:after {
+    display: none;
+}
+
+table#tableBottomDependencies.dataTable.table thead th {
+    background-color: transparent;
+    height: 0;
+    padding: 0;
+    border: transparent;
+}
+
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;

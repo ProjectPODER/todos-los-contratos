@@ -14,8 +14,20 @@ $(function(){
       "url": "http://localhost:3000/api-data",
       "dataSrc": ""
     },
-    "order": [[ 0, 'asc' ]],
     "pageLength": 5,
+    "paging": false,
+    "searching": false,
+    "info": false,
+    "columnDefs": [
+      { "orderable": false, "width": "125px", "targets": 0 },
+      { "orderable": false, "width": "133px", "targets": 1 },
+      { "orderable": false, "width": "133px", "targets": 2 },
+      { "orderable": false, "width": "133px", "targets": 3 },
+      { "orderable": false, "width": "134px", "targets": 4 },
+      { "orderable": false, "width": "134px", "targets": 5 },
+      { "orderable": false, "width": "134px", "targets": 6 }
+    ],
+    "order": [[ 0, 'asc' ]],
     "columns": [
         { "data": "party.ranking" },
         { "data": "party.name" },
@@ -32,8 +44,20 @@ $(function(){
       "url": "http://localhost:3000/api-data",
       "dataSrc": ""
     },
-    "order": [[ 0, 'desc' ]],
     "pageLength": 5,
+    "paging": false,
+    "searching": false,
+    "info": false,
+    "columnDefs": [
+      { "orderable": false, "width": "125px", "targets": 0 },
+      { "orderable": false, "width": "133px", "targets": 1 },
+      { "orderable": false, "width": "133px", "targets": 2 },
+      { "orderable": false, "width": "133px", "targets": 3 },
+      { "orderable": false, "width": "134px", "targets": 4 },
+      { "orderable": false, "width": "134px", "targets": 5 },
+      { "orderable": false, "width": "134px", "targets": 6 }
+    ],
+    "order": [[ 0, 'desc' ]],
     "columns": [
         { "data": "party.ranking" },
         { "data": "party.name" },
