@@ -1,11 +1,5 @@
-@font-face {
-  font-family: "Norwester";
-  src: url("../fonts/norwester.otf");
-}
-
-@font-face {
-  font-family: "Robinson";
-  src: url("../fonts/Robinson-Regular.otf");
+body {
+    font-family: "Anonymous Pro", monospace;
 }
 
 a {
@@ -62,21 +56,60 @@ a {
 .masthead h2 {
     font-family: 'Anonymous Pro', monospace;
     font-size: 1.4em;
-    font-weight: normal;
+    font-weight: 600;
 
 }
 .ui.text.container {
     max-width: 100% !important;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .ui.vertical.stripe {
-    padding: 8em 0em;
+    padding: 8em 0 0;
 }
 .ui.vertical.stripe h3 {
-    font-size: 2em;
+    font-size: 3em;
+    font-family: 'Anton', sans-serif;
+    margin-top: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.main-letter {
+    font-family: 'Anton';
+    font-size: 180px;
+    line-height: 180px;
+    display: block;
+    float: left;
+    height: 160px;
+    margin-top: -10px;
+    margin-right: 30px;
+    margin-left: -2px;
+}
+.content-title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 1em !important;
+}
+.content-title:after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: url(../images/line-black.png) repeat-x top center;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    z-index: 0;
+}
+.content-title-inner {
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    padding: 0 32px;
+    position: relative;
+    z-index: 1;
 }
 .ui.vertical.stripe .button + h3,
 .ui.vertical.stripe p + h3 {
@@ -87,9 +120,22 @@ a {
 }
 .ui.vertical.stripe p {
     font-size: 1.33em;
+    letter-spacing: .01em;
+    line-height: 1.5;
+    font-family: 'Anonymous Pro', monospace;
 }
 .ui.vertical.stripe .horizontal.divider {
     margin: 3em 0em;
+}
+.ui.vertical.segment {
+    border-bottom: none;
+}
+
+.divider-segment {
+    border-top: 2px solid #474747;
+    border-bottom: 2px solid #474747;
+    height: 10px;
+    margin-top: 8em;
 }
 .quote.stripe.segment {
     padding: 0em;
@@ -125,31 +171,25 @@ a {
 .masthead.segment {
     min-height: auto;
 }
-.ui.card {
-    width: 100%;
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;*/
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-}
+
 .table-divider td {
     background-color: #f9fafb;
     height: 20px;
 }
-.ui.card>.content>.description {
+
+
+
+.ui.description {
     margin-top: 2em !important;
     margin-bottom: 3em;
 }
-.ui.card>.content>.header, .ui.cards>.card>.content>.header {
-    font-family: 'Anton', sans-serif;
-    margin-top: 1em;
-    text-transform: uppercase;
-}
-body.pushable>.pusher {
+
+
+
+
+/*body.pushable>.pusher {
     background-color: #fafafa;
-}
-.ui.card>.content p, .ui.cards>.card>.content p {
-    letter-spacing: .01em;
-    line-height: 1.5;
-}
+}*/
 .vertical-aligned-center {
     position: absolute;
     top: 22%;
