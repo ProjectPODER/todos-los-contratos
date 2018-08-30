@@ -88,7 +88,7 @@ block content
             .content-title-inner Ranking de Dependencias
           p
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
-          table#tableTopDependencies.ui.celled.red.table.stackable
+          table#tableTopDependencies.ui.celled.table.stackable
             thead
               tr
                 th Ranking
@@ -98,12 +98,12 @@ block content
                 th Competitividad
                 th Trazabilidad
                 th Total
-            
+          .table-divider
           table#tableBottomDependencies.ui.celled.table.stackable
             thead
             
-          .extra.content.center.aligned
-            button.ui.inverted.red.button Ver más
+          .content-buttons        
+            button.big.ui.black.button Ver más
           //- .divider-segment
       .ui.vertical.stripe.segment
         .ui.container#ranking-historico
@@ -122,7 +122,7 @@ block content
           p
               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
           #context1
-            .ui.red.two.item.pointing.menu
+            .ui.two.item.menu#button-tabs
               a.item.active(data-tab='mapa') Mapa
               a.item(data-tab='lista') Lista
             .ui.active.tab(data-tab='mapa')
@@ -396,8 +396,8 @@ block content
                     td Cell
                     td Cell
                     td Cell
-              .extra.content.center.aligned
-                button.ui.inverted.red.button Ver más
+              .content-buttons 
+                button.big.ui.black.button Ver más
           
       .ui.vertical.stripe.segment
         .ui.container#ranking-municipios
@@ -504,8 +504,8 @@ block content
                 td Cell
                 td Cell
                 td Cell
-          .extra.content.center.aligned
-            button.ui.inverted.red.button Ver más
+          .content-buttons 
+            button.big.ui.black.button Ver más
           
       .ui.vertical.stripe.segment
         .ui.container#ranking-bancos
@@ -564,56 +564,8 @@ block content
                 td Cell
                 td Cell
                 td Cell
-              tr.table-divider
-                td
-                td
-                td
-                td
-                td
-                td
-                td
-              tr
-                td 96
-                td Nombre
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-              tr
-                td 97
-                td Nombre
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-              tr
-                td 98
-                td Nombre
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-              tr
-                td 99
-                td Nombre
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-              tr
-                td 100
-                td Nombre
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-                td Cell
-          .extra.content.center.aligned
-            button.ui.inverted.red.button Ver más
+          .content-buttons.mb-8 
+            button.big.ui.black.button Ver más
           
       .ui.inverted.vertical.footer.segment
         .ui.text.container.center.aligned
