@@ -19,13 +19,13 @@ $(function(){
     "searching": false,
     "info": false,
     "columnDefs": [
-      { "orderable": false, "width": "125px", "targets": 0 },
-      { "orderable": false, "width": "133px", "targets": 1 },
-      { "orderable": false, "width": "133px", "targets": 2 },
-      { "orderable": false, "width": "133px", "targets": 3 },
-      { "orderable": false, "width": "134px", "targets": 4 },
-      { "orderable": false, "width": "134px", "targets": 5 },
-      { "orderable": false, "width": "134px", "targets": 6 }
+      { "orderable": false, "width": "130px", "targets": 0 },
+      { "orderable": false, "width": "138px", "targets": 1 },
+      { "orderable": false, "width": "138px", "targets": 2 },
+      { "orderable": false, "width": "138px", "targets": 3 },
+      { "orderable": false, "width": "140px", "targets": 4 },
+      { "orderable": false, "width": "140px", "targets": 5 },
+      { "orderable": false, "width": "140px", "targets": 6 }
     ],
     "order": [[ 0, 'asc' ]],
     "columns": [
@@ -49,13 +49,13 @@ $(function(){
     "searching": false,
     "info": false,
     "columnDefs": [
-      { "orderable": false, "width": "125px", "targets": 0 },
-      { "orderable": false, "width": "133px", "targets": 1 },
-      { "orderable": false, "width": "133px", "targets": 2 },
-      { "orderable": false, "width": "133px", "targets": 3 },
-      { "orderable": false, "width": "134px", "targets": 4 },
-      { "orderable": false, "width": "134px", "targets": 5 },
-      { "orderable": false, "width": "134px", "targets": 6 }
+      { "orderable": false, "width": "130px", "targets": 0 },
+      { "orderable": false, "width": "138px", "targets": 1 },
+      { "orderable": false, "width": "138px", "targets": 2 },
+      { "orderable": false, "width": "138px", "targets": 3 },
+      { "orderable": false, "width": "140px", "targets": 4 },
+      { "orderable": false, "width": "140px", "targets": 5 },
+      { "orderable": false, "width": "140px", "targets": 6 }
     ],
     "order": [[ 0, 'desc' ]],
     "columns": [

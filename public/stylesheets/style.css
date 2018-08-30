@@ -145,16 +145,12 @@ button.ui.black.button:hover {
     font-weight: bold;
 }
 .ui.menu#button-tabs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 1rem 0em;
     font-family: "Anonymous Pro", monospace;
     background: #FFFFFF;
-    font-weight: normal;
     border: 1px solid black;
     box-shadow: none;
     border-radius: 0;
+    margin-bottom: 3em;
 }
 .ui.menu#button-tabs .item {
     background: transparent;
@@ -285,8 +281,24 @@ button.ui.black.button:hover {
     margin-left: 0;
     padding-left: 0;
 }
+.ui.table {
+    border: none;
+    /*border-bottom: 1px solid #474747;*/
+    border-radius: 0; 
+    color: #474747;
+    /*font-size: 1.2em;*/
+}
+.ui.table#tableBottomDependencies tr:first-child td {
+    border-top: 1px solid #474747;
+}
+table.dataTable.table td, table.dataTable.table th {
+    border-bottom: 1px solid #474747;
+}
 table.dataTable.table thead th {
     border-bottom: 0.2em solid #DB2828; 
+}
+table.dataTable.table thead th.sorting_asc, table.dataTable.table thead th.sorting_desc, table.dataTable.table thead td.sorting, table.dataTable.table thead td.sorting_asc, table.dataTable.table thead td.sorting_desc {
+     padding-right: 12px; 
 }
 table#tableTopDependencies.dataTable.table thead th.sorting:after,
 table#tableBottomDependencies.dataTable.table thead th.sorting:after, 
