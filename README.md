@@ -15,4 +15,5 @@
 
 ### Ejecutar
     nmp install
-    DEBUG=contratosapp:* npm start
+    DEBUG=contratosapp:* npm start // npm start
+    http://localhost:3000/
