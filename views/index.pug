@@ -5,9 +5,9 @@ block content
     #top
     .ui.huge.top.fixed.hidden.inverted.menu
       .ui.container
-        a.active.red.item Inicio
-        a.red.item Metodología
-        a.red.item Unidades Compradoras
+        a(href="/").active.red.item Inicio
+        a(href="/metodologia").red.item Metodología
+        a(href="/unidades-compradoras").red.item Unidades Compradoras
     <!--Sidebar Menu-->
     .ui.vertical.inverted.sidebar.menu
       a.active.item Inicio
@@ -160,6 +160,7 @@ block content
                 th Trazabilidad
                 th Total
           .table-divider
+          .table-divider2
           table#tableBottomMunicipios.ui.table.stackable
             thead
           .content-buttons 
@@ -171,7 +172,7 @@ block content
             .content-title-inner Ranking de Bancos de Inversión
           p
               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
-          table.datatable.ui.table.stackable
+          table#tableTopBancos.ui.table.stackable
             thead
               tr
                 th Ranking
@@ -224,9 +225,4 @@ block content
                 td Cell
           .content-buttons.mb-8 
             button.big.ui.black.button Ver más
-          
-      .ui.inverted.vertical.footer.segment
-        .ui.text.container.center.aligned
-          h4.ui.inverted.header Proyecto promovido por
-          img(src='images/logo-poder.png', alt='')
 

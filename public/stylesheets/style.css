@@ -16,7 +16,7 @@ a {
     margin-top: 3em !important;
 }
 .mb-8{
-    margin-bottom: 8em;
+    margin-bottom: 8em !important;
 }
 button.ui.black.button:hover {
     background: #DB2828;
