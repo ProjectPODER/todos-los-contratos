@@ -288,7 +288,8 @@ button.ui.black.button:hover {
     color: #474747;
     /*font-size: 1.2em;*/
 }
-.ui.table#tableBottomDependencies tr:first-child td {
+.ui.table#tableBottomDependencies tr:first-child td,
+.ui.table#tableBottomMunicipios tr:first-child td {
     border-top: 1px solid #474747;
 }
 table.dataTable.table td, table.dataTable.table th {
@@ -297,19 +298,25 @@ table.dataTable.table td, table.dataTable.table th {
 table.dataTable.table thead th {
     border-bottom: 0.2em solid #DB2828; 
 }
-table.dataTable.table thead th.sorting_asc, table.dataTable.table thead th.sorting_desc, table.dataTable.table thead td.sorting, table.dataTable.table thead td.sorting_asc, table.dataTable.table thead td.sorting_desc {
+/*table.dataTable.table thead th.sorting_asc, table.dataTable.table thead th.sorting_desc, table.dataTable.table thead td.sorting, table.dataTable.table thead td.sorting_asc, table.dataTable.table thead td.sorting_desc {
      padding-right: 12px; 
+}*/
+table#tableStates {
+    width: 100% !important;
 }
 table#tableTopDependencies.dataTable.table thead th.sorting:after,
 table#tableBottomDependencies.dataTable.table thead th.sorting:after, 
 table#tableTopDependencies.dataTable.table thead th.sorting_asc:after,
 table#tableBottomDependencies.dataTable.table thead th.sorting_asc:after, 
 table#tableTopDependencies.dataTable.table thead th.sorting_desc:after,
-table#tableBottomDependencies.dataTable.table thead th.sorting_desc:after {
+table#tableBottomDependencies.dataTable.table thead th.sorting_desc:after,
+table#tableTopMunicipios.dataTable.table thead th.sorting_desc:after,
+table#tableBottomMunicipios.dataTable.table thead th.sorting_desc:after {
     display: none;
 }
 
-table#tableBottomDependencies.dataTable.table thead th {
+table#tableBottomDependencies.dataTable.table thead th,
+table#tableBottomMunicipios.dataTable.table thead th {
     background-color: transparent;
     height: 0;
     padding: 0;
