@@ -100,6 +100,7 @@ block content
                 th Trazabilidad
                 th Total
           .table-divider
+          .table-divider2
           table#tableBottomDependencies.ui.table.stackable
             thead
             
@@ -126,7 +127,8 @@ block content
               a.item(data-tab='lista') Lista
             .ui.active.tab(data-tab='mapa')
               .image.center.aligned
-                img(src='images/map.png')
+                //- img(src='images/map.png')
+                #map
             .ui.tab(data-tab='lista')
               table#tableStates.ui.table.stackable
                 thead
