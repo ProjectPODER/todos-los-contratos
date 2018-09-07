@@ -3,8 +3,8 @@ $(document)
 
     $.ajax({
 
-        url: 'chart-historico-data.json',
-        type: 'json',
+        url: 'http://localhost:3000/api-data',
+        type: 'GET',
         success : function(data) {
             console.log(data);
 

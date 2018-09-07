@@ -48,9 +48,10 @@ button.ui.black.button:hover {
     display: none;
 } 
 .masthead.segment {
-    min-height: 700px;
-    padding: 1em 0em;
+    min-height: auto;
+    padding: 0em 0em;
 }initial
+
 .masthead .logo.item img {
     margin-right: background-position: 50% 50% !important;1em;
 }
@@ -192,16 +193,11 @@ button.ui.black.button:hover {
 .mainbg-overlay {
     min-height: 100vh;
     width: 100%;
-    /*position: absolute;*/
     background: rgba(0, 0, 0, 0.5);
     /*background: -webkit-linear-gradient(left, rgba(192,58,43,1) 0%, rgba(208,75,34,1) 100%);*/
     z-index: 1;
-    top: 0;
-    left: 0;
-    /*opacity: 0.7;*/
-}
-.masthead.segment {
-    min-height: auto;
+   
+    
 }
 
 .table-divider td {
