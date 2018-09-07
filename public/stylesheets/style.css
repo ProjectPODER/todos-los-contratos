@@ -37,7 +37,7 @@ button.ui.black.button:hover {
     color: white;
     font-size: 3em;
     opacity: 0.6;
-}
+}background-position: 50% 50% !important;
 .down-icon i {
     margin-top: 0.5em;
 }
@@ -52,7 +52,7 @@ button.ui.black.button:hover {
     padding: 1em 0em;
 }initial
 .masthead .logo.item img {
-    margin-right: 1em;
+    margin-right: background-position: 50% 50% !important;1em;
 }
 .masthead .ui.menu .ui.button {
     margin-left: 0.5em;
@@ -72,10 +72,10 @@ button.ui.black.button:hover {
 }
 .ui.text.container {
     max-width: 100% !important;
-    position: absolute;
+    /*position: absolute;*/
     top: 53%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
 }
 .ui.vertical.stripe {
     padding: 8em 0 0;
@@ -186,12 +186,13 @@ button.ui.black.button:hover {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background-position: 50% 50% !important;
 }
 .mainbg-overlay {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
     background: rgba(0, 0, 0, 0.5);
     /*background: -webkit-linear-gradient(left, rgba(192,58,43,1) 0%, rgba(208,75,34,1) 100%);*/
     z-index: 1;
@@ -222,7 +223,7 @@ button.ui.black.button:hover {
     background-color: #fafafa;
 }*/
 .vertical-aligned-center {
-    position: absolute;
+    /*position: absolute;*/
     top: 22%;
     left: 26.6%;
 }
