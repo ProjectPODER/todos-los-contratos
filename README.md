@@ -1,19 +1,32 @@
 # Todos los Contratos
 
 
+## Instalación
+Requiere mongodb, nodejs y npm
+
 ### Código
 
-    git clone http://gitlab.rindecuentas.org/equipo-qqw/todos-los-contratos
-    cd contratosapp
+    git clone ssh://git@gitlab.rindecuentas.org:2203/equipo-qqw/todos-los-contratos.git
+
+    cd todos-los-contratos
+
+    npm install
 
 ### Configurar la base de datos
-    
-    mongo
-    use quienesquienwiki
-    db.createCollection("party_flags");
-    db.party_flags.insertMany(*insertar data-ejemplo.json*);
 
-### Ejecutar
-    nmp install
-    DEBUG=contratosapp:* npm start // npm start
-    http://localhost:3000/
+    mongo
+    > use quienesquienwiki
+    db.createCollection("party_flags");
+    > db.party_flags.insertMany(*copiar contenido del archivo data-ejemplo.json*);
+    [ctrl+d]
+
+
+
+### Ejecutar para desarrollo
+    DEBUG=contratosapp:* npm start
+
+### Ejecutar para producción
+
+    npm start
+
+Acceder a la app:    http://localhost:3000/
