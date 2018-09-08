@@ -3,21 +3,31 @@ $(document)
 
     $.ajax({
 
-        url: 'http://localhost:3000/api-data',
+        url: 'http://localhost:3000/historico-data',
         type: 'GET',
         success : function(data) {
-            console.log(data);
+            // console.log(data);
+
+            var labels = [], label = [], score = [];
+            
+            data.forEach(function(dataset) {
+                dataset.years.forEach(year){
+                    labels.push(year.year)
+                    score.push(year.criteria_score.total_score);
+                };
+                label.push(dataset.party.name);
+            });
 
             var config = {
                 type: 'line',
                 data: {
-                    labels: data.years,
+                    labels: labels,
                     datasets: [{
-                        label: data.party,
+                        label: label,
                         backgroundColor: "#d70206",
                         borderColor: "#d70206",
                         data: [
-                            data.party
+                            score
                         ],
                         fill: false,
                     }]
