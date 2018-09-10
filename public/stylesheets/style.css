@@ -1,3 +1,4 @@
+/*********** General ***********/
 body,
 .ui.button,
 .ui.menu {
@@ -8,22 +9,41 @@ a {
     -moz-transition: all .35s;
     transition: all .35s;
 }
-.content-buttons {
-    text-align: center;
-    margin-top: 2em;
-}
 .mt-3{
     margin-top: 3em !important;
 }
 .mb-8{
     margin-bottom: 8em !important;
 }
+
+/*Buttons*/
+.content-buttons {
+    text-align: center;
+    margin-top: 2em;
+}
 button.ui.black.button:hover {
     background: #DB2828;
 }
+
+/***********Header***********/
 .main-logo{
     width: 80%;
     margin-bottom: 3em;
+    margin-top: 4em;
+}
+.main-background{
+    background-image: url("../images/gif.gif") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    min-height: 100vh;
+    background-position: 50% 50% !important;
+}
+.mainbg-overlay {
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 .header-link {
     color: white;
@@ -37,7 +57,7 @@ button.ui.black.button:hover {
     color: white;
     font-size: 3em;
     opacity: 0.6;
-}background-position: 50% 50% !important;
+}
 .down-icon i {
     margin-top: 0.5em;
 }
@@ -71,6 +91,8 @@ button.ui.black.button:hover {
     font-weight: 600;
 
 }
+
+/*********** Content ***********/
 .ui.text.container {
     max-width: 100% !important;
     /*position: absolute;*/
@@ -182,38 +204,14 @@ button.ui.black.button:hover {
 .secondary.pointing.menu .toc.item {
     display: none;
 }
-.main-background{
-    background-image: url("../images/gif.gif") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    width: 100%;
-    min-height: 100vh;
-    background-position: 50% 50% !important;
-}
-.mainbg-overlay {
-    min-height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    /*background: -webkit-linear-gradient(left, rgba(192,58,43,1) 0%, rgba(208,75,34,1) 100%);*/
-    z-index: 1;
-   
-    
-}
-
 .table-divider td {
     background-color: #f9fafb;
     height: 20px;
 }
-
-
-
 .ui.description {
     margin-top: 2em !important;
     margin-bottom: 3em;
 }
-
-
-
 
 /*body.pushable>.pusher {
     background-color: #fafafa;
@@ -234,6 +232,7 @@ button.ui.black.button:hover {
     box-shadow: none;
 }*/
 
+/*********** Side menu ***********/
 .side-menu {
     position: fixed;
     width: 30px;
@@ -278,6 +277,8 @@ button.ui.black.button:hover {
     margin-left: 0;
     padding-left: 0;
 }
+
+/*********** Tables ***********/
 .ui.table {
     border: none;
     /*border-bottom: 1px solid #474747;*/
@@ -319,9 +320,6 @@ table#tableBottomMunicipios.dataTable.table thead th {
     padding: 0;
     border: transparent;
 }
-#map { 
-    height: 600px; 
-}
 .table-divider {
     background-image: url("../images/hoja1.jpg");
     width: 100%
@@ -338,6 +336,14 @@ table#tableBottomMunicipios.dataTable.table thead th {
     background-position: bottom;
     height: 85px;
 }
+
+/*Map*/
+#map { 
+    height: 600px; 
+    z-index: 0;
+}
+
+/*********** Responsive ***********/
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;

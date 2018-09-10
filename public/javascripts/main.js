@@ -14,9 +14,9 @@ $(document)
       });
 
     // create sidebar and attach to menu open
-    $('.ui.sidebar')
-      .sidebar('attach events', '.toc.item')
-    ;
+    // $('.ui.sidebar')
+    //   .sidebar('attach events', '.toc.item')
+    // ;
 
     $('#context1 .menu .item')
       .tab({
@@ -51,5 +51,5 @@ $(document)
     //     $('.side-menu-item').removeClass("active");
     //     $(this).addClass("active");
     // });
-    $('body').scrollspy({target: ".side-menu"});
+    // $('body').scrollspy({target: ".side-menu"});
 });

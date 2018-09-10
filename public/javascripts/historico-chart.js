@@ -45,7 +45,7 @@ $(document)
                 options: {
                     responsive: true,
                     title: {
-                        display: true,
+                        display: false,
                         // text: 'Chart.js Line Chart'
                     },
                     tooltips: {
@@ -76,7 +76,7 @@ $(document)
             };
 
             var ctx = document.getElementById('historicoChart').getContext('2d');
-            window.myLine = new Chart(ctx, config);
+            var myLine = new Chart(ctx, config);
           
         }
     });
