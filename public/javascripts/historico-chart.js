@@ -8,29 +8,39 @@ $(document)
         success : function(data) {
             // console.log(data);
 
-            var labels = [], label = [], score = [];
+            var chart_labels = [], chart_dataset_labels = [], 
+            chart_dataset_scores = [],chart_datasets = [];
             
             data.forEach(function(dataset) {
-                dataset.years.forEach(year){
-                    labels.push(year.year)
-                    score.push(year.criteria_score.total_score);
-                };
-                label.push(dataset.party.name);
+                let this_scores = [];
+                dataset.years.forEach(function(year){
+                    if (chart_labels.indexOf(year.year) == -1) {                        
+                        chart_labels.push(year.year)
+                    }
+                    this_scores.push(year.criteria_score.total_score);
+                    // console.log(score);
+                });
+                chart_dataset_scores.push(this_scores);
+                chart_dataset_labels.push(dataset.dataset.label);
             });
+            let colors = ["#d70206","#c7e2f6"]
 
+            for (i in chart_dataset_labels) {
+                chart_datasets.push({
+                        label: chart_dataset_labels[i],
+                        backgroundColor: colors[i],
+                        borderColor: colors[i],
+                        data: chart_dataset_scores[i],
+                        fill: false,
+                    })
+            }
+
+            // console.log(chart_labels, chart_datasets)
             var config = {
                 type: 'line',
                 data: {
-                    labels: labels,
-                    datasets: [{
-                        label: label,
-                        backgroundColor: "#d70206",
-                        borderColor: "#d70206",
-                        data: [
-                            score
-                        ],
-                        fill: false,
-                    }]
+                    labels: chart_labels,
+                    datasets: chart_datasets
                 },
                 options: {
                     responsive: true,
@@ -71,4 +81,3 @@ $(document)
         }
     });
 });
-
