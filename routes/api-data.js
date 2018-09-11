@@ -31,9 +31,55 @@ router.get('/', function(req, res, next) {
       // --Usar colección "reportes" en "dash-tuto"
       collection = db.collection(collectionName);
 
+      console.log(req.query["filtro"],req.query["tipo"]);
+
+      //Limit es si piden filtrado, si piden all va sin limit
+      let limit = 5;
+      if (req.query["filtro"] == "all") {
+        limit = 0;
+      }
+      //Sort es top o bottom dependiendo del filtro
+      let sort = -1;
+      if (req.query["filtro"] == "bottom") {
+        sort = 1;
+      }
+
+      //Type define lo que se busca
+      let type = "buyer";
+      switch (req.query["tipo"]) {
+        case "dependencias":
+          type = "buyer"
+        break;
+        case "estados":
+          type = "state"
+        break;
+        case "municipios":
+          type = "municipios"
+        break;
+        case "bancos":
+          type = "bancos"
+        break;
+        case "uc":
+          type = "uc"
+        break;
+        case "proveedor":
+          type = "supplier"
+        break;
+      }
+
       // --Método find de mongo (referencia http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#find)
       // --Se agrega un método "toArray" porque viendo la referencia "find()" no tiene un callback
-      collection.find({}).toArray(function(err, result){
+      collection.find(
+        {
+          "party.type":type
+        },
+        {
+          limit: limit,
+          sort: {
+            "criteria_score.total_score" : sort
+          }
+        }
+      ).toArray(function(err, result){
         if(err){  // --Si no fue posible realizar la consulta, regresar el error
           res.send(err);
         }else{
