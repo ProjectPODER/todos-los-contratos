@@ -28,16 +28,16 @@ $(document)
 
           // Adding color
           function getColor(d) {
-              return d > 1.0 ? '#ffffef' :
-                     d > 0.9 ? '#ffffe5' :
-                     d > 0.8 ? '#ffffcc' :
-                     d > 0.7 ? '#ffeda0' :
-                     d > 0.6 ? '#fed976' :
-                     d > 0.5 ? '#feb24c' :
-                     d > 0.4 ? '#fd8d3c' :
-                     d > 0.3 ? '#fc4e2a' :
-                     d > 0.2 ? '#e31a1c' :
-                     d > 0.1 ? '#bd0026' :
+              return d > 100 ? '#ffffef' :
+                     d > 90 ? '#ffffe5' :
+                     d > 80 ? '#ffffcc' :
+                     d > 70 ? '#ffeda0' :
+                     d > 60 ? '#fed976' :
+                     d > 50 ? '#feb24c' :
+                     d > 40 ? '#fd8d3c' :
+                     d > 30 ? '#fc4e2a' :
+                     d > 20 ? '#e31a1c' :
+                     d > 10 ? '#bd0026' :
                                '#800026';
           }
 
@@ -110,7 +110,7 @@ $(document)
           legend.onAdd = function (map) {
 
               var div = L.DomUtil.create('div', 'info legend'),
-                  grades = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+                  grades = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
                   labels = [];
 
               // loop through our intervals and generate a label with a colored square for each interval

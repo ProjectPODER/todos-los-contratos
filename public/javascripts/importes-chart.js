@@ -49,7 +49,7 @@ $(document)
             data: barChartData,
             options: {
                 title: {
-                    display: true,
+                    display: false,
                     text: 'Chart.js Bar Chart - Stacked'
                 },
                 tooltips: {

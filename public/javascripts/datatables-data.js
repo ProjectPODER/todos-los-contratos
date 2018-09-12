@@ -1,6 +1,6 @@
 $(function(){
   function formatNumber ( data, type, row, meta ) {
-    return Number(data).toFixed(2);
+    return Number(data).toFixed(4)*100;
   }
   function formatParty ( data, type, row, meta ) {
     // console.log(row);
@@ -18,8 +18,8 @@ $(function(){
       "searching": false,
       "info": false,
       "columnDefs": [
-        { "orderable": false, "width": "130px", "targets": 0 },
-        { "orderable": false, "width": "138px", "targets": 1 },
+        { "orderable": false, "width": "50px", "targets": 0 },
+        { "orderable": false, "width": "218px", "targets": 1 },
         { "orderable": false, "width": "138px", "targets": 2 },
         { "orderable": false, "width": "138px", "targets": 3 },
         { "orderable": false, "width": "140px", "targets": 4 },
