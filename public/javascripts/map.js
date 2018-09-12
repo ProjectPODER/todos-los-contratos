@@ -125,7 +125,6 @@ $(document)
 
           legend.addTo(mymap);
 
-
           // var state = [], value = [];
 
           // data.forEach(function(dataset){
