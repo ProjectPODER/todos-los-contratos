@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017";
 
 // --Nombre de base de datos
-const dbName = 'quienesquienwiki';
+const dbName = 'rop';
 
 // --Nombre de colección en base de datos ('dash-tuto')
 const collectionName = 'party_flags';
@@ -48,19 +48,19 @@ router.get('/', function(req, res, next) {
       let type = "buyer";
       switch (req.query["tipo"]) {
         case "dependencias":
-          type = "buyer"
+          type = "dependency"
         break;
         case "estados":
           type = "state"
         break;
         case "municipios":
-          type = "municipios"
+          type = "municipality"
         break;
         case "bancos":
-          type = "bancos"
+          type = "bank"
         break;
         case "uc":
-          type = "uc"
+          type = "buyer"
         break;
         case "proveedor":
           type = "supplier"
