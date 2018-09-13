@@ -40,10 +40,15 @@ $(document)
                      d > 10 ? '#bd0026' :
                                '#800026';
           }
-// findBy(stateScores,{name: feature.properties.name}).criteria_score.total_score
           function style(feature) {
+            let score = null;
+            $.each( $('#tableStates').DataTable().data(),function(c,d) { if (d.party.name == feature.properties.name) { score = d.criteria_score.total_score } })
+            score = (score*100).toFixed(2);
+            console.log(feature.properties.name,score);
+            feature.properties.total_score = score;
+            // findBy(stateScores,{name: feature.properties.name}).criteria_score.total_score
             return {
-              fillColor: getColor(feature.properties.total_score),
+              fillColor: getColor(score),
               weight: 2,
               opacity: 1,
               color: 'white',
@@ -82,7 +87,7 @@ $(document)
               layer.on({
                   mouseover: highlightFeature,
                   mouseout: resetHighlight,
-                  click: zoomToFeature
+                  // click: zoomToFeature
               });
           }
 
@@ -98,8 +103,8 @@ $(document)
           // method that we will use to update the control based on feature properties passed
           info.update = function (props) {
               this._div.innerHTML = '<h4>Ranking de estados</h4>' +  (props ?
-                  '<b>' + props.name + '</b><br />' + props.total_score + ' en total'
-                  : 'Hover over a state');
+                  '<b>' + props.name + '</b><br />' + props.total_score + ' puntos.'
+                  : 'Pase el mouse sobre un estado');
           };
 
           info.addTo(mymap);

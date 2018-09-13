@@ -57,7 +57,7 @@ router.get('/', function(req, res, next) {
           type = "municipality"
         break;
         case "bancos":
-          type = "bank"
+          type = "funder"
         break;
         case "uc":
           type = "buyer"
