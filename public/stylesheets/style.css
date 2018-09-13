@@ -334,7 +334,7 @@ table#tableBottomMunicipios.dataTable.table thead th {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 85px;
+    height: 45px;
 }
 #tableTopDependencies.ui.table th:last-child,
 #tableStates.ui.table th:last-child,

@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017";
 
 // --Nombre de base de datos
-const dbName = 'rop';
+const dbName = 'quienesquienwiki';
 
 // --Nombre de colección en base de datos ('dash-tuto')
 const collectionName = 'party_flags';
