@@ -40,7 +40,7 @@ $(document)
                      d > 10 ? '#bd0026' :
                                '#800026';
           }
-
+// findBy(stateScores,{name: feature.properties.name}).criteria_score.total_score
           function style(feature) {
             return {
               fillColor: getColor(feature.properties.total_score),

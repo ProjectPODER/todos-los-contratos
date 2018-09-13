@@ -268,7 +268,7 @@ button.ui.black.button:hover {
 
 }
 
-.side-menu.active>a{
+.active>.side-menu-item{
     background: #DB2828;
 }
 
@@ -328,14 +328,6 @@ table#tableBottomMunicipios.dataTable.table thead th {
     background-position: bottom;
     height: 85px;
 }
-/*.table-divider2 {
-    background-image: url("../images/hoja2.jpg");
-    width: 100%
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 85px;
-}*/
 
 /*Map*/
 #map { 

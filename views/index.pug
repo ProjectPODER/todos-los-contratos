@@ -14,7 +14,7 @@ block content
       a.item Metodología
       a.item Unidades Compradoras
     nav.side-menu
-        ul
+        ul.nav.navbar-nav
             li
                 a.anchor(href='#top')
                     div(data-inverted='' data-tooltip='Inicio' data-position='left center')
@@ -28,15 +28,7 @@ block content
             li
                 a.anchor.side-menu-item(href='#ranking-municipios' data-inverted='' data-tooltip='Ranking de Municipios' data-position='left center')                
             li
-                a.anchor.side-menu-item(href='#ranking-bancos' data-inverted='' data-tooltip='Ranking de Bancos' data-position='left center')  
-    //- nav.side-menu
-    //-     ul.nav.navbar-nav
-    //-       li
-    //-         a(href='#ranking-dependencias') Section 1
-    //-       li
-    //-         a(href='#ranking-historico') Section 2
-    //-       li
-    //-         a(href='#ranking-estados') Section 3          
+                a.anchor.side-menu-item(href='#ranking-bancos' data-inverted='' data-tooltip='Ranking de Bancos' data-position='left center')            
 
     <!--Page Contents-->
     .pusher
@@ -100,7 +92,6 @@ block content
                 th Trazabilidad
                 th Total
           .table-divider
-          .table-divider2
           table#tableBottomDependencies.ui.table.stackable
             thead
             
@@ -160,7 +151,6 @@ block content
                 th Trazabilidad
                 th Total
           .table-divider
-          .table-divider2
           table#tableBottomMunicipios.ui.table.stackable
             thead
           .content-buttons 
