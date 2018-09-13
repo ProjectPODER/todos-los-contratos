@@ -1,0 +1,156 @@
+[
+    {
+        "dataset": {
+            "label": "QuienEsQuien.Wiki"
+        },
+        "years": [
+            {
+                "year": 2012,
+                "criteria_score": {
+                    "total_score": 50,
+                    "transparencia": 20,
+                    "temporalidad": 60,
+                    "competitividad": 40,
+                    "trazabilidad": 40
+                }
+            },
+            {
+                "year": 2013,
+                "criteria_score": {
+                    "total_score": 10,
+                    "transparencia": 28,
+                    "temporalidad": 95,
+                    "competitividad": 25,
+                    "trazabilidad": 65
+                }
+            },
+            {
+                "year": 2014,
+                "criteria_score": {
+                    "total_score": 30,
+                    "transparencia": 87,
+                    "temporalidad": 32,
+                    "competitividad": 67,
+                    "trazabilidad": 40
+                }
+            },
+            {
+                "year": 2015,
+                "criteria_score": {
+                    "total_score": 73,
+                    "transparencia": 20,
+                    "temporalidad": 53,
+                    "competitividad": 49,
+                    "trazabilidad": 60
+                }
+            },
+            {
+                "year": 2016,
+                "criteria_score": {
+                    "total_score": 18,
+                    "transparencia": 85,
+                    "temporalidad": 62,
+                    "competitividad": 39,
+                    "trazabilidad": 40
+                }
+            },
+            {
+                "year": 2017,
+                "criteria_score": {
+                    "total_score": 32,
+                    "transparencia": 10,
+                    "temporalidad": 81,
+                    "competitividad": 90,
+                    "trazabilidad": 51
+                }
+            },
+            {
+                "year": 2018,
+                "criteria_score": {
+                    "total_score": 49,
+                    "transparencia": 19,
+                    "temporalidad": 30,
+                    "competitividad": 41,
+                    "trazabilidad": 91
+                }
+            }
+        ]
+    },
+    {
+        "dataset": {
+            "label": "Compranet 2.0"
+        },
+        "years": [
+            {
+                "year": 2012,
+                "criteria_score": {
+                    "total_score": 37,
+                    "transparencia": 10,
+                    "temporalidad": 68,
+                    "competitividad": 20,
+                    "trazabilidad": 86
+                }
+            },
+            {
+                "year": 2013,
+                "criteria_score": {
+                    "total_score": 30,
+                    "transparencia": 52,
+                    "temporalidad": 57,
+                    "competitividad": 74,
+                    "trazabilidad": 82
+                }
+            },
+            {
+                "year": 2014,
+                "criteria_score": {
+                    "total_score": 20,
+                    "transparencia": 93,
+                    "temporalidad": 35,
+                    "competitividad": 28,
+                    "trazabilidad": 50
+                }
+            },
+            {
+                "year": 2015,
+                "criteria_score": {
+                    "total_score": 64,
+                    "transparencia": 31,
+                    "temporalidad": 67,
+                    "competitividad": 86,
+                    "trazabilidad": 92
+                }
+            },
+            {
+                "year": 2016,
+                "criteria_score": {
+                    "total_score": 53,
+                    "transparencia": 72,
+                    "temporalidad": 16,
+                    "competitividad": 24,
+                    "trazabilidad": 85
+                }
+            },
+            {
+                "year": 2017,
+                "criteria_score": {
+                    "total_score": 29,
+                    "transparencia": 32,
+                    "temporalidad": 63,
+                    "competitividad": 69,
+                    "trazabilidad": 74
+                }
+            },
+            {
+                "year": 2018,
+                "criteria_score": {
+                    "total_score": 29,
+                    "transparencia": 45,
+                    "temporalidad": 63,
+                    "competitividad": 58,
+                    "trazabilidad": 63
+                }
+            }
+        ]
+    }
+]

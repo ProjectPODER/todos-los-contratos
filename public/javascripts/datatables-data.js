@@ -1,6 +1,6 @@
 $(function(){
   function formatNumber ( data, type, row, meta ) {
-    return Number(data).toFixed(2);
+    return (Number(data)*100).toFixed(2);
   }
   function formatParty ( data, type, row, meta ) {
     // console.log(row);
@@ -17,14 +17,15 @@ $(function(){
       "paging": false,
       "searching": false,
       "info": false,
+      "responsive": false,
       "columnDefs": [
-        { "orderable": false, "width": "130px", "targets": 0 },
-        { "orderable": false, "width": "138px", "targets": 1 },
-        { "orderable": false, "width": "138px", "targets": 2 },
-        { "orderable": false, "width": "138px", "targets": 3 },
-        { "orderable": false, "width": "140px", "targets": 4 },
-        { "orderable": false, "width": "140px", "targets": 5 },
-        { "orderable": false, "width": "140px", "targets": 6 }
+        { "orderable": false, "width": "54px", "targets": 0 },
+        { "orderable": false, "width": "453px", "targets": 1 },
+        { "orderable": false, "width": "100px", "targets": 2 },
+        { "orderable": false, "width": "92px", "targets": 3 },
+        { "orderable": false, "width": "107px", "targets": 4 },
+        { "orderable": false, "width": "92px", "targets": 5 },
+        { "orderable": false, "width": "86px", "targets": 6 }
       ],
       "order": [[ 0, 'asc' ]],
       "columns": [

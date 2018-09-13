@@ -24,16 +24,6 @@ $(document)
         context: 'parent'
       });
 
-    // Efectos para los anchors del Side menu
-    $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-        if( target.length ) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top - 70
-            }, 500);
-        }
-    });
     // Mostrar y ocultar Side menu
     $(window).scroll(function() {
         if ($(this).scrollTop() > 250) {
@@ -46,10 +36,26 @@ $(document)
             }, 100);
         }
     })
+    
+    // Add scrollspy to <body>
+  $('body').scrollspy({target: ".side-menu", offset: 150});   
 
-    // $('.side-menu-item').click(function(){
-    //     $('.side-menu-item').removeClass("active");
-    //     $(this).addClass("active");
-    // });
-    // $('body').scrollspy({target: ".side-menu"});
+  // Add smooth scrolling on all links inside the navbar
+  $(".side-menu a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 70
+      }, 800, function(){
+      });
+    }  // End if
+  });
 });

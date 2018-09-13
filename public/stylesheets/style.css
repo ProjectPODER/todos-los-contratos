@@ -268,7 +268,7 @@ button.ui.black.button:hover {
 
 }
 
-.side-menu.active>a{
+.active>.side-menu-item{
     background: #DB2828;
 }
 
@@ -279,6 +279,9 @@ button.ui.black.button:hover {
 }
 
 /*********** Tables ***********/
+table{
+    width: 100% !important;
+}
 .ui.table {
     border: none;
     /*border-bottom: 1px solid #474747;*/
@@ -302,7 +305,7 @@ table.dataTable.table thead th {
 table#tableStates {
     width: 100% !important;
 }
-table#tableTopDependencies.dataTable.table thead th.sorting:after,
+/*table#tableTopDependencies.dataTable.table thead th.sorting:after,
 table#tableBottomDependencies.dataTable.table thead th.sorting:after, 
 table#tableTopDependencies.dataTable.table thead th.sorting_asc:after,
 table#tableBottomDependencies.dataTable.table thead th.sorting_asc:after, 
@@ -311,25 +314,22 @@ table#tableBottomDependencies.dataTable.table thead th.sorting_desc:after,
 table#tableTopMunicipios.dataTable.table thead th.sorting_desc:after,
 table#tableBottomMunicipios.dataTable.table thead th.sorting_desc:after {
     display: none;
+}*/
+table.dataTable.table thead th.sorting, table.dataTable.table thead th.sorting_asc, table.dataTable.table thead th.sorting_desc, table.dataTable.table thead td.sorting, table.dataTable.table thead td.sorting_asc, table.dataTable.table thead td.sorting_desc {
+    padding-right: 0 !important;
 }
-
+table.dataTable.table thead th.sorting_asc:after, table.dataTable.table thead td.sorting_asc:after {
+    content: none;
+}
 table#tableBottomDependencies.dataTable.table thead th,
 table#tableBottomMunicipios.dataTable.table thead th {
     background-color: transparent;
     height: 0;
-    padding: 0;
+    /*padding: 0;*/
     border: transparent;
 }
 .table-divider {
-    background-image: url("../images/hoja1.jpg");
-    width: 100%
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    height: 85px;
-}
-.table-divider2 {
-    background-image: url("../images/hoja2.jpg");
+    background-image: url("../images/broke-paper.png");
     width: 100%
     background-repeat: no-repeat;
     background-size: cover;
@@ -341,6 +341,30 @@ table#tableBottomMunicipios.dataTable.table thead th {
 #map { 
     height: 600px; 
     z-index: 0;
+}
+.info {
+    padding: 6px 8px;
+    font: 14px/16px "Anonymous Pro", monospace;
+    /*background: white;*/
+    background: rgba(255,255,255,1);
+    /*box-shadow: 0 0 15px rgba(0,0,0,0.2);*/
+    border-radius: 0;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+    font-family: "Anonymous Pro", monospace;
+}
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
 }
 
 /*********** Responsive ***********/
@@ -365,5 +389,11 @@ table#tableBottomMunicipios.dataTable.table thead th {
     .masthead h2 {
         margin-top: 0.5em;
         font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .side-menu {
+        display: none;
     }
 }

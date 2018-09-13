@@ -4,8 +4,8 @@ $(document)
         var barChartData = {
             labels: ['2015', '2016', '2017'],
             datasets: [{
-                label: 'Dataset 1',
-                backgroundColor: "#d70206",
+                label: '0 - 25',
+                backgroundColor: "#bd0026",
                 data: [
                     837203,
                     487627,
@@ -16,20 +16,20 @@ $(document)
                     983275
                 ]
             }, {
-                label: 'Dataset 2',
-                backgroundColor: "#d17905",
+                label: '25 - 50',
+                backgroundColor: "#fd8d3c",
                 data: [
                     293802,
                     476297,
                     764862,
                     103172,
                     476308,
-                    632053,
+                    632836,
                     298467
                 ]
             }, {
-                label: 'Dataset 3',
-                backgroundColor: "#f4c63d",
+                label: '50 - 75',
+                backgroundColor: "#fed976",
                 data: [
                     648293,
                     209365,
@@ -38,6 +38,18 @@ $(document)
                     475662,
                     857262,
                     194765
+                ]
+            }, {
+                label: '75 - 100',
+                backgroundColor: "#ffffe5",
+                data: [
+                    948732,
+                    847629,
+                    937290,
+                    582694,
+                    926534,
+                    127413,
+                    139473
                 ]
             }]
 
@@ -49,7 +61,7 @@ $(document)
             data: barChartData,
             options: {
                 title: {
-                    display: true,
+                    display: false,
                     text: 'Chart.js Bar Chart - Stacked'
                 },
                 tooltips: {
@@ -60,9 +72,17 @@ $(document)
                 scales: {
                     xAxes: [{
                         stacked: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Año'
+                        }
                     }],
                     yAxes: [{
-                        stacked: true
+                        stacked: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Importe'
+                        }
                     }]
                 }
             }
