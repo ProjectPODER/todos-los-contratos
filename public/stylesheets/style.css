@@ -336,7 +336,19 @@ table#tableBottomMunicipios.dataTable.table thead th {
     background-position: bottom;
     height: 85px;
 }
-
+#tableTopDependencies.ui.table th:last-child,
+#tableStates.ui.table th:last-child,
+#tableTopMunicipios.ui.table th:last-child,
+#tableTopBancos.ui.table th:last-child,
+#tableUCs.ui.table th:last-child {
+    border: 0.2em solid #DB2828;
+    background: #eaedf1;
+    font-weight: bold;
+}
+.ui.table td:last-child {
+    background: #eaedf1;
+    font-weight: bold;
+}
 /*Map*/
 #map { 
     height: 600px; 
