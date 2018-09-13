@@ -24,16 +24,6 @@ $(document)
         context: 'parent'
       });
 
-    // Efectos para los anchors del Side menu
-    // $('a[href^="#"]').on('click', function(event) {
-    // var target = $(this.getAttribute('href'));
-    //     if( target.length ) {
-    //         event.preventDefault();
-    //         $('html, body').stop().animate({
-    //             scrollTop: target.offset().top - 70
-    //         }, 500);
-    //     }
-    // });
     // Mostrar y ocultar Side menu
     $(window).scroll(function() {
         if ($(this).scrollTop() > 250) {
@@ -46,11 +36,6 @@ $(document)
             }, 100);
         }
     })
-
-    // $('.side-menu-item').click(function(){
-    //     $('.side-menu-item').removeClass("active");
-    //     $(this).addClass("active");
-    // });
     
     // Add scrollspy to <body>
   $('body').scrollspy({target: ".side-menu", offset: 150});   
