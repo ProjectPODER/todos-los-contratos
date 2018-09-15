@@ -58,4 +58,26 @@ $(document)
       });
     }  // End if
   });
+
+  
+  var email, to, subject, text;
+  $("#send_email").click(function (e) {
+    e.preventDefault();
+    // enter your email account that you want to recieve emails at.
+    name = $("#name").val();
+    email = $("#email").val();
+    text = $("#text").val();
+    // $("#message").text("Sending E-mail...Please wait");
+    $.post("/send", {
+        to: to,
+        name: name,
+        email: email,
+        text: text
+    }, function (data) {
+        if (data == "sent") {
+            console.log("Email sent");
+        }
+    });
+    return false;
+  });
 });

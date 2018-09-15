@@ -20,6 +20,8 @@ block content
                     div(data-inverted='' data-tooltip='Inicio' data-position='left center')
                         i.chevron.circle.up.icon
             li
+                a.anchor.side-menu-item(href='#resumen-contratos' data-inverted='' data-tooltip='Resúmen de contratos' data-position='left center')                
+            li
                 a.anchor.side-menu-item(href='#ranking-dependencias' data-inverted='' data-tooltip='Ranking de Dependencias' data-position='left center')                
             li
                 a.anchor.side-menu-item(href='#ranking-historico' data-inverted='' data-tooltip='Ranking Histórico' data-position='left center')                
@@ -50,25 +52,30 @@ block content
                 | Groucho Marx
               |  (cómico estadounidense de principio de siglo XX). Siguiendo esta máxima, la administración mexicana va publicando portales de contrataciones abiertas en distintas webs con datos que no coinciden y dificultan la rendición de cuentas.
 
-            h2
-              | Desde QuiénEsQuién.Wiki hemos recopilado, limpiado y sistematizado XXXX contratos federales, estatales y municipales de XXX fuentes de datos para facilitar su búsqueda y consulta. Además evaluamos la forma en que cada fuente y dependencia publica los datos e indicamos cómo pueden mejorar. 
-            //- .ui.two.statistics
-            //-   .ui.inverted.statistic
-            //-     .value
-            //-       | 54
-            //-     .label
-            //-       | contratos federales, estatales y municipales
-            //-   .ui.inverted.statistic
-            //-     .value
-            //-       | 54
-            //-     .label
-            //-       | fuentes de datos
+            .ui.two.statistics
+              .ui.inverted.statistic
+                ul.main-list
+                  strong Objetivos:
+                  li 
+                   i.check.circle.icon 
+                   | Facilitar su búsqueda y consulta
+                  li 
+                    i.check.circle.icon 
+                    | Evaluar la transparencia de cada dependencia
+                  li 
+                    i.check.circle.icon 
+                    | Indicar cómo pueden mejorar
+              .ui.inverted.statistic
+                .value
+                  | 1.345.343
+                .label
+                  | contratos federales, estatales y municipales
 
             //- a.ui.large.inverted.gray.button.mt-3(href='https://www.youtube.com/watch?v=4XEp-mZ2bG4', target='_blank')
             //-   | Ver video
             a.down-icon(href="#down")
                 i.chevron.down.icon
-      .ui.vertical.stripe.segment
+      .ui.vertical.stripe.segment#resumen-contratos
         .ui.container#down
           p
             span.main-letter L
@@ -84,8 +91,8 @@ block content
           table#tableTopDependencies.ui.table.stackable
             thead
               tr
-                th Ranking
-                th Organización
+                th Posición
+                th Dependencia
                 th Transparencia
                 th Temporalidad
                 th Competitividad
@@ -95,7 +102,7 @@ block content
           table#tableBottomDependencies.ui.table.stackable
             thead
           .content-buttons        
-            button.big.ui.black.button Ver más
+            a(href="https://quienesquien.wiki/orgs/?sort=score").big.ui.black.button Ver todas las dependencias
   
       .ui.vertical.stripe.segment
         .ui.container#ranking-historico
@@ -103,7 +110,8 @@ block content
             .content-title-inner Ranking Histórico
           p
               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
-          canvas#historicoChart
+          #historicoChartContainer
+            canvas#historicoChart
           
       .ui.vertical.stripe.segment
         .ui.container#ranking-estados
@@ -122,15 +130,13 @@ block content
               table#tableStates.ui.table.stackable
                 thead
                   tr
-                    th Ranking
-                    th Organización
+                    th Posición
+                    th Estado
                     th Transparencia
                     th Temporalidad
                     th Competitividad
                     th Trazabilidad
                     th Total
-              .content-buttons 
-                button.big.ui.black.button Ver más
           
       .ui.vertical.stripe.segment
         .ui.container#ranking-municipios
@@ -141,8 +147,8 @@ block content
           table#tableTopMunicipios.ui.table.stackable
             thead
               tr
-                th Ranking
-                th Organización
+                th Posición
+                th Municipio
                 th Transparencia
                 th Temporalidad
                 th Competitividad
@@ -152,7 +158,7 @@ block content
           table#tableBottomMunicipios.ui.table.stackable
             thead
           .content-buttons 
-            button.big.ui.black.button Ver más
+            a(href="https://quienesquien.wiki/orgs/?filter=municipio&sort=score").big.ui.black.button Ver todos los municipios
           
       .ui.vertical.stripe.segment
         .ui.container#ranking-bancos
@@ -163,13 +169,33 @@ block content
           table#tableTopBancos.ui.table.stackable
             thead
               tr
-                th Ranking
-                th Organización
+                th Posición
+                th Banco
                 th Transparencia
                 th Temporalidad
                 th Competitividad
                 th Trazabilidad
                 th Total
-          .content-buttons.mb-8 
-            button.big.ui.black.button Ver más
 
+      .ui.secondary.vertical.stripe.segment
+        .ui.container
+          h2 ¿Conoces más información? Puedes ayudarnos a mejorar este proyecto.
+          .ui.aligned.very.relaxed.stackable.grid#form-columns
+            .ten.wide.column#form-column
+              h4 SI TIENES INFORMACIÓN SOBRE CONTRATOS U ORGANIZACIONES POCO TRANSPARENTES. 
+              form.ui.form
+                .field
+                  label ESCRIBE LOS DATOS QUE DESEAS APORTAR CON FUENTE
+                  textarea(name="text",id="text")
+                .field
+                  label NOMBRE
+                  input(name="name",id="name")
+                .field
+                  label EMAIL
+                  input(name="email",id="email")
+                button.ui.red.submit.button#send_email ENVIAR
+            .six.wide.column
+              h4 SI DESESAS FILTRAR LOS DATOS ANÓNIMAMENTE, ACCEDE A
+              img.logo-mexicoleaks(alt="Mexicoleaks Logo", src="../images/mexicoleaks-negro.png")
+              p Una plataforma de filtración de datos anónima y segura que verifica la información proporcionada.
+              a(href="http://mexicoleaks.mx").ui.red.button ACCEDER

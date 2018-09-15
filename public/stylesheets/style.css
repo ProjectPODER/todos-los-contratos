@@ -8,6 +8,7 @@ a {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    color: #04a;
 }
 .mt-3{
     margin-top: 3em !important;
@@ -70,7 +71,7 @@ button.ui.black.button:hover {
 .masthead.segment {
     min-height: auto;
     padding: 0em 0em;
-}initial
+}
 
 .masthead .logo.item img {
     margin-right: background-position: 50% 50% !important;1em;
@@ -91,7 +92,18 @@ button.ui.black.button:hover {
     font-weight: 600;
 
 }
+.main-list {
+    text-align: left;
+    list-style: none;
+    border-right: 2px solid #fffa;
+    font-size: 1.2em;
+    font-family: 'Anonymous Pro', monospace;
+    padding: 0.2em;
+}
 
+.ui.inverted.statistic .value {
+    padding-top: 0.7em;
+}
 /*********** Content ***********/
 .ui.text.container {
     max-width: 100% !important;
@@ -101,7 +113,7 @@ button.ui.black.button:hover {
     /*transform: translate(-50%, -50%);*/
 }
 .ui.vertical.stripe {
-    padding: 8em 0 0;
+    padding: 5em 0 3em 0;
 }
 .ui.vertical.stripe h3 {
     font-size: 3em;
@@ -346,13 +358,40 @@ table#tableBottomMunicipios.dataTable.table thead th {
     font-weight: bold;
 }
 .ui.table td:last-child {
-    background: #eaedf1;
+    background: #feb;
+    /*background: #eaedf1;*/
     font-weight: bold;
+}
+.ui.table td:first-child,
+.ui.table td:nth-child(2),
+.ui.table td:last-child {
+    font-size: 1.2em;
+}
+
+.ui.table td:nth-child(2) a {
+    background: #feb;
+    padding: 0.2em;
+    line-height: 1.2em;
+}
+.ui.table td:nth-child(2) a:hover {
+    background: #ff0;
+}
+
+.ui.table tr td {
+    border-top: none;
+    border-bottom: 1px solid #0002;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.ui.table td.td-number {
+    text-align: center;
 }
 /*Map*/
 #map { 
     height: 600px; 
     z-index: 0;
+}
+#historicoChartContainer {
+    height: 250px;
 }
 .info {
     padding: 6px 8px;
@@ -377,6 +416,18 @@ table#tableBottomMunicipios.dataTable.table thead th {
     float: left;
     margin-right: 8px;
     opacity: 0.7;
+}
+.logo-mexicoleaks {
+    width: 70%;
+    margin-bottom: 1em; 
+}
+
+#form-column {
+    border-right: 1px solid #0004;
+}
+
+#form-columns {
+    margin-top: 2em;
 }
 
 /*********** Responsive ***********/

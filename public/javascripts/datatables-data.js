@@ -29,13 +29,13 @@ $(function(){
       ],
       "order": [[ 0, 'asc' ]],
       "columns": [
-          { "data": "criteria_score.total_score", render:formatNumber },
+          { "data": "criteria_score.total_score", render:formatNumber,class:"td-number" },
           { "data": "party.name", render:formatParty },
-          { "data": "criteria_score.transparencia", render:formatNumber },
-          { "data": "criteria_score.temporalidad", render:formatNumber },
-          { "data": "criteria_score.competitividad", render:formatNumber },
-          { "data": "criteria_score.trazabilidad", render:formatNumber },
-          { "data": "criteria_score.total_score", render:formatNumber }
+          { "data": "criteria_score.transparencia", render:formatNumber,class:"td-number" },
+          { "data": "criteria_score.temporalidad", render:formatNumber,class:"td-number" },
+          { "data": "criteria_score.competitividad", render:formatNumber,class:"td-number" },
+          { "data": "criteria_score.trazabilidad", render:formatNumber,class:"td-number" },
+          { "data": "criteria_score.total_score", render:formatNumber,class:"td-number" }
       ],
       extra: "party.id"
     }

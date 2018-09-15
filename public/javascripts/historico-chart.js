@@ -23,7 +23,7 @@ $(document)
                 chart_dataset_scores.push(this_scores);
                 chart_dataset_labels.push(dataset.dataset.label);
             });
-            let colors = ["#d70206","#c7e2f6"]
+            let colors = ["#DB2828","#313233"]
 
             for (i in chart_dataset_labels) {
                 chart_datasets.push({
@@ -43,6 +43,7 @@ $(document)
                     datasets: chart_datasets
                 },
                 options: {
+                    maintainAspectRatio: false,
                     responsive: true,
                     title: {
                         display: false,
@@ -68,7 +69,7 @@ $(document)
                             display: true,
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Transparencia'
+                                labelString: 'Puntaje promedio'
                             }
                         }]
                     }

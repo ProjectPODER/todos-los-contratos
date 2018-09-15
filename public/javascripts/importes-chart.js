@@ -29,7 +29,7 @@ $(document)
                 ]
             }, {
                 label: '50 - 75',
-                backgroundColor: "#fed976",
+                backgroundColor: "#feb24c",
                 data: [
                     648293,
                     209365,
@@ -41,7 +41,7 @@ $(document)
                 ]
             }, {
                 label: '75 - 100',
-                backgroundColor: "#ffffe5",
+                backgroundColor: "#ffeda0",
                 data: [
                     948732,
                     847629,

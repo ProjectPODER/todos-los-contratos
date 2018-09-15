@@ -26,6 +26,10 @@ $(document)
             onEachFeature: onEachFeature
           }).addTo(mymap);
 
+          //Esto es para que cuando tarda en cargar la lista de estados el mapa se actualice con los valores de cada estado
+          $("tableStates").DataTable().on("draw",function() {
+            geojson.redraw();
+          })
           // Adding color
           function getColor(d) {
               return d > 100 ? '#ffffef' :
