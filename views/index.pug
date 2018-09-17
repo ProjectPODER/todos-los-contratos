@@ -20,17 +20,20 @@ block content
                     div(data-inverted='' data-tooltip='Inicio' data-position='left center')
                         i.chevron.circle.up.icon
             li
-                a.anchor.side-menu-item(href='#resumen-contratos' data-inverted='' data-tooltip='Resúmen de contratos' data-position='left center')                
+                a.anchor.side-menu-item(href='#resumen-contratos' data-inverted='' data-tooltip='Resúmen de contratos' data-position='left center')
             li
-                a.anchor.side-menu-item(href='#ranking-dependencias' data-inverted='' data-tooltip='Ranking de Dependencias' data-position='left center')                
+                a.anchor.side-menu-item(href='#ranking-dependencias' data-inverted='' data-tooltip='Ranking de Dependencias' data-position='left center')
             li
-                a.anchor.side-menu-item(href='#ranking-historico' data-inverted='' data-tooltip='Ranking Histórico' data-position='left center')                
+                a.anchor.side-menu-item(href='#ranking-historico' data-inverted='' data-tooltip='Ranking Histórico' data-position='left center')
             li
-                a.anchor.side-menu-item(href='#ranking-estados' data-inverted='' data-tooltip='Ranking de Estados' data-position='left center')                
+                a.anchor.side-menu-item(href='#ranking-estados' data-inverted='' data-tooltip='Ranking de Estados' data-position='left center')
             li
-                a.anchor.side-menu-item(href='#ranking-municipios' data-inverted='' data-tooltip='Ranking de Municipios' data-position='left center')                
+                a.anchor.side-menu-item(href='#ranking-municipios' data-inverted='' data-tooltip='Ranking de Municipios' data-position='left center')
             li
-                a.anchor.side-menu-item(href='#ranking-bancos' data-inverted='' data-tooltip='Ranking de Bancos' data-position='left center')            
+                a.anchor.side-menu-item(href='#ranking-bancos' data-inverted='' data-tooltip='Ranking de Bancos' data-position='left center')
+            li
+                a.anchor.side-menu-item(href='#contacto' data-inverted='' data-tooltip='Contacto' data-position='left center')
+
 
     <!--Page Contents-->
     .pusher
@@ -46,7 +49,7 @@ block content
           .ui.text.container
             img.main-logo(src="images/LOGO-CONTRATOS-WHITE.png")
             h2
-              | "Estos son mis contratos, y si no les gustan... tengo otros" podría haber dicho  
+              | "Estos son mis contratos, y si no les gustan... tengo otros" podría haber dicho
 
               a.header-link(href='https://www.youtube.com/watch?v=4XEp-mZ2bG4' target='_blank')
                 | Groucho Marx
@@ -56,14 +59,14 @@ block content
               .ui.inverted.statistic
                 ul.main-list
                   strong Objetivos:
-                  li 
-                   i.check.circle.icon 
+                  li
+                   i.check.circle.icon
                    | Facilitar su búsqueda y consulta
-                  li 
-                    i.check.circle.icon 
+                  li
+                    i.check.circle.icon
                     | Evaluar la transparencia de cada dependencia
-                  li 
-                    i.check.circle.icon 
+                  li
+                    i.check.circle.icon
                     | Indicar cómo pueden mejorar
               .ui.inverted.statistic
                 .value
@@ -101,9 +104,9 @@ block content
           .table-divider
           table#tableBottomDependencies.ui.table.stackable
             thead
-          .content-buttons        
+          .content-buttons
             a(href="https://quienesquien.wiki/orgs/?sort=score").big.ui.black.button Ver todas las dependencias
-  
+
       .ui.vertical.stripe.segment
         .ui.container#ranking-historico
           h3.ui.header.content-title
@@ -112,7 +115,7 @@ block content
               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
           #historicoChartContainer
             canvas#historicoChart
-          
+
       .ui.vertical.stripe.segment
         .ui.container#ranking-estados
           h3.ui.header.content-title
@@ -137,7 +140,7 @@ block content
                     th Competitividad
                     th Trazabilidad
                     th Total
-          
+
       .ui.vertical.stripe.segment
         .ui.container#ranking-municipios
           h3.ui.header.content-title
@@ -157,9 +160,9 @@ block content
           .table-divider
           table#tableBottomMunicipios.ui.table.stackable
             thead
-          .content-buttons 
+          .content-buttons
             a(href="https://quienesquien.wiki/orgs/?filter=municipio&sort=score").big.ui.black.button Ver todos los municipios
-          
+
       .ui.vertical.stripe.segment
         .ui.container#ranking-bancos
           h3.ui.header.content-title
@@ -177,12 +180,12 @@ block content
                 th Trazabilidad
                 th Total
 
-      .ui.secondary.vertical.stripe.segment
+      .ui.secondary.vertical.stripe.segment#contacto
         .ui.container
           h2 ¿Conoces más información? Puedes ayudarnos a mejorar este proyecto.
           .ui.aligned.very.relaxed.stackable.grid#form-columns
             .ten.wide.column#form-column
-              h4 SI TIENES INFORMACIÓN SOBRE CONTRATOS U ORGANIZACIONES POCO TRANSPARENTES. 
+              h4 SI TIENES INFORMACIÓN SOBRE CONTRATOS U ORGANIZACIONES POCO TRANSPARENTES.
               form.ui.form
                 .field
                   label ESCRIBE LOS DATOS QUE DESEAS APORTAR CON FUENTE
