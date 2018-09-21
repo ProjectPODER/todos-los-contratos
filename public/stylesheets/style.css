@@ -69,7 +69,7 @@ button.ui.black.button:hover {
 }
 .hidden.menu {
     display: none;
-} 
+}
 .masthead.segment {
     min-height: auto;
     padding: 0em 0em;
@@ -237,6 +237,15 @@ button.ui.black.button:hover {
     margin-bottom: 3em;
 }
 
+.trHidden {
+  visibility:hidden;
+  line-height: 0
+}
+
+.trHidden th {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 /*body.pushable>.pusher {
     background-color: #fafafa;
 }*/
@@ -310,18 +319,15 @@ table{
 }
 .ui.table {
     border: none;
-    border-radius: 0; 
+    border-radius: 0;
     color: #474747;
 }
-.ui.table#tableBottomDependencies tr:first-child td,
-.ui.table#tableBottomMunicipios tr:first-child td {
-    border-top: 1px solid #474747;
-}
+
 table.dataTable.table td, table.dataTable.table th {
     border-bottom: 1px solid #474747;
 }
 table.dataTable.table thead th {
-    border-bottom: 0.2em solid #DB2828; 
+    border-bottom: 0.2em solid #DB2828;
 }
 table#tableStates {
     width: 100% !important;
@@ -388,8 +394,8 @@ table#tableBottomMunicipios.dataTable.table thead th {
 
 /*********** Map ***********/
 
-#map { 
-    height: 600px; 
+#map {
+    height: 600px;
     z-index: 0;
 }
 #historicoChartContainer {
@@ -421,7 +427,7 @@ table#tableBottomMunicipios.dataTable.table thead th {
 }
 .logo-mexicoleaks {
     width: 70%;
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
 }
 
 #form-column {
