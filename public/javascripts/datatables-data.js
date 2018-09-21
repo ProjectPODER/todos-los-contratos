@@ -10,7 +10,7 @@ $(function(){
   function datatableConfig(tipo,filtro) {
     return {
       "ajax": {
-        "url": "http://localhost:3000/api-data?tipo="+tipo+"&filtro="+filtro,
+        "url": "/api-data?tipo="+tipo+"&filtro="+filtro,
         "dataSrc": ""
       },
       "pageLength": 5,

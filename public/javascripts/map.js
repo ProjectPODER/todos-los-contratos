@@ -14,7 +14,7 @@ $(document)
     }).addTo(mymap);
 
     $.ajax({
-        url: 'http://localhost:3000/estados-mexico.js',
+        url: '/estados-mexico.js',
         type: 'GET',
         success : function(data) {
 
