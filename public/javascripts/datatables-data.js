@@ -4,7 +4,7 @@ $(function(){
   }
   function formatParty ( data, type, row, meta ) {
     // console.log(row);
-    return "<a href='https://quienesquien.wiki/orgs/"+row.party.id+"'>"+data+"</a>"
+    return "<a href='https://staging.quienesquien.wiki/orgs/"+row.party.id+"'>"+data+"</a>"
   }
 
   function datatableConfig(tipo,filtro) {
