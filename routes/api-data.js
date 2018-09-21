@@ -3,7 +3,7 @@ var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 
 // --Url para conectarse a mongo
-const url = "mongodb://localhost:27017";
+const url = process.env.MONGO_URL || "mongodb://localhost:27017";
 
 // --Nombre de base de datos
 const dbName = 'quienesquienwiki';
