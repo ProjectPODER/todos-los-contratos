@@ -4,7 +4,11 @@ $(function(){
   }
   function formatParty ( data, type, row, meta ) {
     // console.log(row);
-    return "<a href='https://staging.quienesquien.wiki/orgs/"+row.party.id+"'>"+data+"</a>"
+    let parent = "";
+    if (row.parent) {
+      parent = ", "+row.parent.name;
+    }
+    return "<a href='https://staging.quienesquien.wiki/orgs/"+row.party.id+"'>"+data+"</a>"+parent;
   }
 
   function datatableConfig(tipo,filtro) {
