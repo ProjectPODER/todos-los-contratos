@@ -39,13 +39,10 @@ block content
     .pusher
       .ui.inverted.vertical.masthead.center.aligned.segment.main-background
         .mainbg-overlay
-          .ui.container
-            .ui.huge.secondary.inverted.pointing.menu
-              a.toc.item
-                i.sidebar.icon
-              a(href="/").active.item Inicio
-              a(href="/metodologia").item Metodología
-              a(href="/unidades-compradoras").item Unidades Compradoras
+          <!--Responsive menu-->
+          #responsive-menu.ui.huge.secondary.inverted.pointing.menu
+            a.toc.item
+              i.sidebar.icon
           .ui.text.container
             img.main-logo(src="images/LOGO-CONTRATOS-WHITE.png")
             h2
@@ -91,7 +88,7 @@ block content
             .content-title-inner Ranking de Dependencias
           p
             | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
-          table#tableTopDependencies.ui.table.stackable
+          table#tableTopDependencies.ui.table.unstackable
             thead
               tr
                 th Posición
@@ -102,7 +99,7 @@ block content
                 th Trazabilidad
                 th Total
           .table-divider
-          table#tableBottomDependencies.ui.table.stackable
+          table#tableBottomDependencies.ui.table.unstackable
             thead
           .content-buttons
             a(href="https://quienesquien.wiki/orgs/?sort=score").big.ui.black.button Ver todas las dependencias
@@ -130,7 +127,7 @@ block content
               .image.center.aligned
                 #map
             .ui.tab(data-tab='lista')
-              table#tableStates.ui.table.stackable
+              table#tableStates.ui.table.unstackable
                 thead
                   tr
                     th Posición
@@ -147,7 +144,7 @@ block content
             .content-title-inner Ranking de Municipios
           p
               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
-          table#tableTopMunicipios.ui.table.stackable
+          table#tableTopMunicipios.ui.table.unstackable
             thead
               tr
                 th Posición
@@ -158,7 +155,7 @@ block content
                 th Trazabilidad
                 th Total
           .table-divider
-          table#tableBottomMunicipios.ui.table.stackable
+          table#tableBottomMunicipios.ui.table.unstackable
             thead
           .content-buttons
             a(href="https://quienesquien.wiki/orgs/?filter=municipio&sort=score").big.ui.black.button Ver todos los municipios
@@ -169,7 +166,7 @@ block content
             .content-title-inner Ranking de Bancos de Inversión
           p
               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
-          table#tableTopBancos.ui.table.stackable
+          table#tableTopBancos.ui.table.unstackable
             thead
               tr
                 th Posición

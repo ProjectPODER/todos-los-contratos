@@ -310,10 +310,8 @@ table{
 }
 .ui.table {
     border: none;
-    /*border-bottom: 1px solid #474747;*/
     border-radius: 0; 
     color: #474747;
-    /*font-size: 1.2em;*/
 }
 .ui.table#tableBottomDependencies tr:first-child td,
 .ui.table#tableBottomMunicipios tr:first-child td {
@@ -325,22 +323,9 @@ table.dataTable.table td, table.dataTable.table th {
 table.dataTable.table thead th {
     border-bottom: 0.2em solid #DB2828; 
 }
-/*table.dataTable.table thead th.sorting_asc, table.dataTable.table thead th.sorting_desc, table.dataTable.table thead td.sorting, table.dataTable.table thead td.sorting_asc, table.dataTable.table thead td.sorting_desc {
-     padding-right: 12px; 
-}*/
 table#tableStates {
     width: 100% !important;
 }
-/*table#tableTopDependencies.dataTable.table thead th.sorting:after,
-table#tableBottomDependencies.dataTable.table thead th.sorting:after, 
-table#tableTopDependencies.dataTable.table thead th.sorting_asc:after,
-table#tableBottomDependencies.dataTable.table thead th.sorting_asc:after, 
-table#tableTopDependencies.dataTable.table thead th.sorting_desc:after,
-table#tableBottomDependencies.dataTable.table thead th.sorting_desc:after,
-table#tableTopMunicipios.dataTable.table thead th.sorting_desc:after,
-table#tableBottomMunicipios.dataTable.table thead th.sorting_desc:after {
-    display: none;
-}*/
 table.dataTable.table thead th.sorting, table.dataTable.table thead th.sorting_asc, table.dataTable.table thead th.sorting_desc, table.dataTable.table thead td.sorting, table.dataTable.table thead td.sorting_asc, table.dataTable.table thead td.sorting_desc {
     padding-right: 0 !important;
 }
@@ -447,6 +432,10 @@ table#tableBottomMunicipios.dataTable.table thead th {
     margin-top: 2em;
 }
 
+/*********** Importes Chart ***********/
+
+
+
 /*********** Responsive ***********/
 
 @media only screen and (max-width: 1200px) {
@@ -461,9 +450,22 @@ table#tableBottomMunicipios.dataTable.table thead th {
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .side-menu {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .ui.fixed.menu {
         display: none !important;
+    }
+    #responsive-menu {
+        position: fixed;
+        z-index: 101;
+        margin: 0em;
+        width: 100%;
+        background: #000;
     }
     .secondary.pointing.menu .toc.item {
         display: block;
@@ -477,7 +479,7 @@ table#tableBottomMunicipios.dataTable.table thead th {
     }
     .masthead h2 {
         margin-top: 0.5em;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     #form-column {
         border-right: none;
@@ -485,16 +487,26 @@ table#tableBottomMunicipios.dataTable.table thead th {
     .ui.table:not(.unstackable) tbody, .ui.table:not(.unstackable) tr, .ui.table:not(.unstackable) tr > th, .ui.table:not(.unstackable) tr > td {
         text-align: left;
     }
-}
-
-@media only screen and (max-width: 992px) {
-    .side-menu {
-        display: none;
+    .main-logo {
+        width: 85%;
+    }
+    .main-list {
+        font-size: 1.1em;
+    }
+    .ui.two.statistics .value {
+        font-size: 3rem !important;
+    }
+    .ui.vertical.stripe p {
+        font-size: 1.1em;
+    }
+    .logo-mexicoleaks {
+        width: 50%;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .masthead h2 {
-        font-size: 1.2em;
+    #importesChart {
+        width: 100%;
+        height: 300px !important;
     }
 }
