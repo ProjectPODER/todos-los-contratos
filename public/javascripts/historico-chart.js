@@ -3,18 +3,18 @@ $(document)
 
     $.ajax({
 
-        url: 'http://localhost:3000/data-historico-chart.json',
+        url: '/data-historico-chart.json',
         type: 'GET',
         success : function(data) {
             // console.log(data);
 
-            var chart_labels = [], chart_dataset_labels = [], 
+            var chart_labels = [], chart_dataset_labels = [],
             chart_dataset_scores = [],chart_datasets = [];
-            
+
             data.forEach(function(dataset) {
                 let this_scores = [];
                 dataset.years.forEach(function(year){
-                    if (chart_labels.indexOf(year.year) == -1) {                        
+                    if (chart_labels.indexOf(year.year) == -1) {
                         chart_labels.push(year.year)
                     }
                     this_scores.push(year.criteria_score.total_score);
@@ -78,7 +78,7 @@ $(document)
 
             var ctx = document.getElementById('historicoChart').getContext('2d');
             var myLine = new Chart(ctx, config);
-          
+
         }
     });
 });
