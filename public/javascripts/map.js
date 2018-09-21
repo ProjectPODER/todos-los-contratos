@@ -18,15 +18,18 @@ $(document)
         type: 'GET',
         success : function(data) {
 
-          var geojson;
+
           // Our listeners
-          geojson = L.geoJson(statesData, {
+          let geojson = L.geoJson(statesData, {
             style: style,
             onEachFeature: onEachFeature
           }).addTo(mymap);
 
+          $("#map").data("geolayer",geojson);
+
           //Esto es para que cuando tarda en cargar la lista de estados el mapa se actualice con los valores de cada estado
-          $("tableStates").DataTable().on("draw",function() {
+          $("#tableStates").DataTable().on("draw",function() {
+            console.log("redraw",geojson);
             geojson.redraw();
           })
           // Adding color
