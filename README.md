@@ -6,7 +6,7 @@ Requiere mongodb, nodejs y npm
 
 ### Código
 
-    git clone ssh://git@gitlab.rindecuentas.org:2203/equipo-qqw/todos-los-contratos.git
+    git clone https://github.com/ProjectPODER/todos-los-contratos.git
 
     cd todos-los-contratos
 
@@ -30,3 +30,11 @@ Requiere mongodb, nodejs y npm
     npm start
 
 Acceder a la app:    http://localhost:3000/
+
+
+### Variables de entorno
+* PORT para definir el puerto (default: 3000);
+* MONGO_URL es la url completa de mongodb (default: "mongodb://localhost:27013")
+* EMAIL_SERVER el servidor con el que enviará los mails de contacto
+* EMAIL_USER el usuario de correo
+* EMAIL_PASS el password del usuario de correo
