@@ -2,6 +2,9 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
+
+console.log(process.env);
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
@@ -33,12 +36,12 @@ router.post('/send', function (req, res) {
     }
 
 	let smtpTransport = nodemailer.createTransport({
-        host: 'mail.mayfirst.org',
-        port: 587,
+        host: process.env.EMAIL_SERVER || "",
+        port: process.env.EMAIL_PORT || "587",
         secure: false, // true for 465, false for other ports
         auth: {
-            user: "", // generated ethereal user
-            pass: "" // generated ethereal password
+            user: process.env.EMAIL_USER || "", // generated ethereal user
+            pass: process.env.EMAIL_PASS || "" // generated ethereal password
         }
     });
 

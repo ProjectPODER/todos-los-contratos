@@ -36,9 +36,9 @@ $(document)
             }, 100);
         }
     })
-    
+
     // Add scrollspy to <body>
-  $('body').scrollspy({target: ".side-menu", offset: 150});   
+  $('body').scrollspy({target: ".side-menu", offset: 150});
 
   // Add smooth scrolling on all links inside the navbar
   $(".side-menu a").on('click', function(event) {
@@ -59,7 +59,7 @@ $(document)
     }  // End if
   });
 
-  
+
   var email, to, subject, text;
   $("#send_email").click(function (e) {
     e.preventDefault();
@@ -75,9 +75,11 @@ $(document)
         text: text
     }, function (data) {
         if (data == "sent") {
-            console.log("Email sent");
+              console.log("Email sent");
+              $("#form-column").hide()
+              $("#thanks-column").show().removeClass("hidden");
         }
-    });
+    },"text");
     return false;
   });
 });
