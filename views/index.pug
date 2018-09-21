@@ -10,9 +10,9 @@ block content
         a(href="/unidades-compradoras").red.item Unidades Compradoras
     <!--Sidebar Menu-->
     .ui.vertical.inverted.sidebar.menu
-      a.active.item Inicio
-      a.item Metodología
-      a.item Unidades Compradoras
+      a(href="/").active.red.item Inicio
+      a(href="/metodologia").red.item Metodología
+      a(href="/unidades-compradoras").red.item Unidades Compradoras
     nav.side-menu
         ul.nav.navbar-nav
             li
@@ -39,17 +39,17 @@ block content
     .pusher
       .ui.inverted.vertical.masthead.center.aligned.segment.main-background
         .mainbg-overlay
-          //- .ui.container
-          //-   .ui.huge.secondary.inverted.pointing.menu
-          //-     a.toc.item
-          //-       i.sidebar.icon
-          //-     a.active.item Inicio
-          //-     a.item Metodología
-          //-     a.item Unidades Compradoras
+          .ui.container
+            .ui.huge.secondary.inverted.pointing.menu
+              a.toc.item
+                i.sidebar.icon
+              a(href="/").active.item Inicio
+              a(href="/metodologia").item Metodología
+              a(href="/unidades-compradoras").item Unidades Compradoras
           .ui.text.container
             img.main-logo(src="images/LOGO-CONTRATOS-WHITE.png")
             h2
-              | "Estos son mis contratos, y si no les gustan... tengo otros" podría haber dicho
+              | "Estos son mis contratos, y si no les gustan... tengo otros" podría haber dicho 
 
               a.header-link(href='https://www.youtube.com/watch?v=4XEp-mZ2bG4' target='_blank')
                 | Groucho Marx

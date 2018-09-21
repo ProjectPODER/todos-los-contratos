@@ -17,7 +17,8 @@ a {
     margin-bottom: 8em !important;
 }
 
-/*Buttons*/
+/*********** Buttons ***********/
+
 .content-buttons {
     text-align: center;
     margin-top: 2em;
@@ -27,6 +28,7 @@ button.ui.black.button:hover {
 }
 
 /***********Header***********/
+
 .main-logo{
     width: 80%;
     margin-bottom: 3em;
@@ -104,7 +106,9 @@ button.ui.black.button:hover {
 .ui.inverted.statistic .value {
     padding-top: 0.7em;
 }
+
 /*********** Content ***********/
+
 .ui.text.container {
     max-width: 100% !important;
     /*position: absolute;*/
@@ -157,7 +161,7 @@ button.ui.black.button:hover {
     position: relative;
     z-index: 1;
 }
-.ui.vertical.stripe .button + h3,
+.ui.vertical.striprgba(34, 36, 38, 0.15)e .button + h3,
 .ui.vertical.stripe p + h3 {
     margin-top: 3em;
 }
@@ -213,6 +217,14 @@ button.ui.black.button:hover {
 .footer.segment {
     padding: 5em 0em;
 }
+.secondary.pointing.menu .item,
+.secondary.pointing.menu .menu {
+    display: none;
+}
+.pointing.menu {
+    /*display: none;*/
+    margin: 0;
+}
 .secondary.pointing.menu .toc.item {
     display: none;
 }
@@ -245,6 +257,7 @@ button.ui.black.button:hover {
 }*/
 
 /*********** Side menu ***********/
+
 .side-menu {
     position: fixed;
     width: 30px;
@@ -291,6 +304,7 @@ button.ui.black.button:hover {
 }
 
 /*********** Tables ***********/
+
 table{
     width: 100% !important;
 }
@@ -366,6 +380,7 @@ table#tableBottomMunicipios.dataTable.table thead th {
 .ui.table td:nth-child(2),
 .ui.table td:last-child {
     font-size: 1.2em;
+    line-height: 30px;
 }
 
 .ui.table td:nth-child(2) a {
@@ -385,7 +400,9 @@ table#tableBottomMunicipios.dataTable.table thead th {
 .ui.table td.td-number {
     text-align: center;
 }
-/*Map*/
+
+/*********** Map ***********/
+
 #map { 
     height: 600px; 
     z-index: 0;
@@ -431,13 +448,22 @@ table#tableBottomMunicipios.dataTable.table thead th {
 }
 
 /*********** Responsive ***********/
-@media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 1200px) {
+    .main-list {
+        text-align: center;
+        border-right: none;
+        font-size: 1.2em;
+    }
+
+    .ui.two.statistics .statistic {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     .ui.fixed.menu {
         display: none !important;
-    }
-    .secondary.pointing.menu .item,
-    .secondary.pointing.menu .menu {
-        display: none;
     }
     .secondary.pointing.menu .toc.item {
         display: block;
@@ -451,12 +477,24 @@ table#tableBottomMunicipios.dataTable.table thead th {
     }
     .masthead h2 {
         margin-top: 0.5em;
-        font-size: 1.5em;
+        font-size: 1.3em;
+    }
+    #form-column {
+        border-right: none;
+    }
+    .ui.table:not(.unstackable) tbody, .ui.table:not(.unstackable) tr, .ui.table:not(.unstackable) tr > th, .ui.table:not(.unstackable) tr > td {
+        text-align: left;
     }
 }
 
 @media only screen and (max-width: 992px) {
     .side-menu {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .masthead h2 {
+        font-size: 1.2em;
     }
 }

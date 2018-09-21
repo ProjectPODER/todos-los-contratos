@@ -17,15 +17,15 @@ $(function(){
       "paging": false,
       "searching": false,
       "info": false,
-      "responsive": false,
+      "responsive": true,
       "columnDefs": [
-        { "orderable": false, "width": "54px", "targets": 0 },
-        { "orderable": false, "width": "453px", "targets": 1 },
-        { "orderable": false, "width": "100px", "targets": 2 },
-        { "orderable": false, "width": "92px", "targets": 3 },
-        { "orderable": false, "width": "107px", "targets": 4 },
-        { "orderable": false, "width": "92px", "targets": 5 },
-        { "orderable": false, "width": "86px", "targets": 6 }
+        { "orderable": false, "width": "54px", "targets": 0, "responsivePriority": 1 },
+        { "orderable": false, "width": "453px", "targets": 1, "responsivePriority": 2 },
+        { "orderable": false, "width": "100px", "targets": 2, "responsivePriority": 4 },
+        { "orderable": false, "width": "92px", "targets": 3, "responsivePriority": 5 },
+        { "orderable": false, "width": "107px", "targets": 4, "responsivePriority": 6 },
+        { "orderable": false, "width": "92px", "targets": 5, "responsivePriority": 7 },
+        { "orderable": false, "width": "86px", "targets": 6, "responsivePriority": 3 }
       ],
       "order": [[ 0, 'asc' ]],
       "columns": [
