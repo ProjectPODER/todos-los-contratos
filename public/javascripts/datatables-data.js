@@ -38,7 +38,7 @@ $(function(){
       ],
       "order": [[ 0, 'asc' ]],
       "columns": [
-          { "data": "criteria_score.total_score", render:formatNumber,class:"td-number" },
+          { "data": "ranking", class:"td-number" },
           { "data": "party.name", render:formatParty },
           { "data": "criteria_score.transparencia", render:formatNumber,class:"td-number" },
           { "data": "criteria_score.temporalidad", render:formatNumber,class:"td-number" },
