@@ -22,11 +22,66 @@ block content
         .ui.container
           p
             span.main-letter L
-            | orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
+            | a metodología de evaluación fué desarrollada por el equipo de PODER durante le año 2018. 
+
 
       .ui.vertical.stripe.segment.mb-8
         .ui.container
           h3.ui.header.content-title
             .content-title-inner Metodología
           p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum
+            | Basandonos en diferentes compilaciones de indicadores de transparencia y corrupción, desarrollados a su vez por Open Contracting Partnership, Fundación CIVIO y otros, seleccionamos aquellos indicadores que resultaban posibles de evaluar con los datos del estándar de contrataciones abiertas OCDS.
+          
+          p Los contratos de CompraNET fueron convertidos al standard OCDS y luego comparados con los datos de Contrataciones Abiertas.
+      
+      .ui.vertical.stripe.segment.mb-8
+        .ui.container
+          h3.ui.header.content-title
+            .content-title-inner Banderas
+          p
+            | Cada bandera es apliada individualmente a los datos de cda contrato, luego las evaluaciones son promediadas para cada unidad compradora, dependencia, municipio, estado, bando de inversión y para cada año.
+          
+          h4 Categorías
+
+
+          ul
+            li Transparencia
+              ul
+                li OCDS válido (aún no implementado): Si el documento OCDS es válido, es decir, cumple con la estructura y los campos obligatorios.
+                li Campos completos: Porcentaje de campos del standard OCDS 1.1 que incluye cada contrato.
+                li Secciones completas: Si el contrato tiene al menos un campo dentro de cada una de las secciones del standard (planning, parties, buyer, tender, awards, contracts)
+            li Temporalidad
+              ul
+                li Campos fundamentales para la temporalidad:
+                  ul
+                    li awards.date
+                    li tender.tenderPeriod.endDate
+                    li tender.tenderPeriod.startDate
+                    li date
+                    li contracts.period.startDate
+                li Tiempo insuficiente de preparación de oferta: El tiempo entre el inicio de la convocatoria y el final de la convocatoria es de 15 días para las licitaciones nacionales y 20 días para las internacionales. Para determinar el tiempo, se usan datos de compranet y legislación mexicana.
+                li Fechas sospechosas (aún no implementado)
+                li Duraciones largas: Que la duración entre el inicio y el fin del contrato sea menor a 1000 días.
+            li Competitividad
+              ul
+                li Campos fundamentales para la competitividad: 
+                  ul 
+                    li Que haya al menos un supplier en parties
+                    li Que haya un tender.procurementMethod
+                li Paraísos fiscales: Si el país de orígen del proveedor está rankeado con más de 60 en el Financial Secrecy Index 2018 https://www.financialsecrecyindex.com
+            li Trazabilidad
+              ul
+                li Escala inconsistente: Usando datos de compranet, que la escala (tamaño de empresa) reportada por el comprador y el vendedor sean iguales
+                li Campos fundamentales para la trazabilidad
+                  ul
+                    li planning.budget
+                    party.name (de buyers y suppliers
+                li Modificaciones al contrato: Se determinasi existe el campo contracts.amendements
+                li Información de las partes: Que para cada pare del contrato exista un nombre y al menos otro dato de contacto como email, teléfono, fax o sitio web.
+                li Proveedor fantasma: Que el proveedor tenga el campo party.identifier.id, lo que implica que está registrado.
+                li Importe redondeado: Que el importe no termine en 5 ceros.
+                li Comprensión del título (aún no implementada): Que el título sea descriptivo, se evaluará con un algoritmo de comprensibilidad el texto.
+                li Falta de referencia oficial: Que el campo source tenga algo.
+
+    
+                    

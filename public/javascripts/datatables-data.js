@@ -5,10 +5,15 @@ $(function(){
   function formatParty ( data, type, row, meta ) {
     // console.log(row);
     let parent = "";
-    if (row.parent) {
-      parent = ", "+row.parent.name;
+    if (row.party.parent) {
+      parent = ", "+row.party.parent.name;
     }
-    return "<a href='https://staging.quienesquien.wiki/orgs/"+row.party.id+"'>"+data+"</a>"+parent;
+    if (row.party.type == "state") {
+      return data;
+    }
+    else {
+      return "<a href='https://staging.quienesquien.wiki/orgs/"+row.party.id+"'>"+data+"</a>"+parent;
+    }
   }
 
   function datatableConfig(tipo,filtro) {
