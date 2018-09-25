@@ -75,7 +75,7 @@ $(document)
                     }
                 }
             };
-
+            console.log("historicoChart",config);
             var ctx = document.getElementById('historicoChart').getContext('2d');
             var myLine = new Chart(ctx, config);
 

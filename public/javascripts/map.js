@@ -52,7 +52,7 @@ $(document)
             let score = null;
             $.each( $('#tableStates').DataTable().data(),function(c,d) { if (d.party.name == feature.properties.name) { score = d.criteria_score.total_score } })
             score = (score*100).toFixed(2);
-            console.log(feature.properties.name,score);
+            // console.log(feature.properties.name,score);
             feature.properties.total_score = score;
             // findBy(stateScores,{name: feature.properties.name}).criteria_score.total_score
             return {
