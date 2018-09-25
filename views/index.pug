@@ -55,16 +55,16 @@ block content
             .ui.two.statistics
               .ui.inverted.statistic
                 ul.main-list
-                  strong Objetivos:
+                  strong En TodosLosContratos.mx podrás:
                   li
                    i.check.circle.icon
-                   | Facilitar su búsqueda y consulta
+                   | Buscar y consultar los contratos públicos mexicanos
                   li
                     i.check.circle.icon
                     | Evaluar la transparencia de cada dependencia
                   li
                     i.check.circle.icon
-                    | Indicar cómo pueden mejorar
+                    | Ver cómo puede mejorar la contratación en México 
               .ui.inverted.statistic
                 .value
                   | 1.388.437
@@ -86,15 +86,22 @@ block content
           p Para seguir promoviendo la rendición de cuentas ciudadana desde PODER y con la base de datos QuiénEsQuién.Wiki hemos creado el primer sistema de evaluación de la calidad de contratación abierto y libre de México. Aún no podemos detectar delitos, pero si malas practicas en los procesos. Esta es una primera beta que esparamos mejorar con la ayuda de todos los mexicanos, si conoces más datasets o tienes propuestas de algoritmos escribenos a 
             a(href="mailto:mejoras@todosloscontratos.mx") mejoras@todosloscontratos.mx
             | .
-
-          canvas#importesChart(style="display:none")
+          p
+            strong Cantidad de contratos por año en cada rango de puntajes
+          canvas#importesChart
 
       .ui.vertical.stripe.segment
         .ui.container#ranking-dependencias
           h3.ui.header.content-title
             .content-title-inner Ranking de Dependencias
           p
-            | Este listado presenta todas las dependencias de nivel federal, estatal y municipal, ordenadas de acuerdo a su puntaje total. 
+            | En México la contratación pública se realiza desde las dependencias, y esté es el nombre genérico para referirnos a organismos federales, estatales y municipales con capacidad de contratar y de los que tenemos los datos.
+
+          p Usamos el 
+            a(href="/metodologia") sistema de evaluación en red llamado Groucho
+            | , que mide cuatro distintos conceptos de calidad del contrato -Transparencia, Temporalidad, Competitividad y Trazabilidad- y los refactoriza para evaluar las dependencias que se influencian entre ellas -Confiabilidad- ya que no podemos entender el sistema como dependencias independientes, sino como una red donde todos los nodos se influencian entre ellos. 
+          p  Para que las dependencias puedan publicar de forma efectiva, necesitamos que las distintas plataforams que soportan sus datos sean lo más estrictas posibles y les permitan entrar todos los datos relvantes. 
+
           table#tableTopDependencies.ui.table.unstackable
             thead
               tr
@@ -133,7 +140,7 @@ block content
           h3.ui.header.content-title
             .content-title-inner Ranking de Estados
           p
-              | Todos los contratos de todas las Unidades Compradoras de cada Estado que gestionando dinero federal componen este indicador por estado. No incluye contratos de nivel municipal.
+              |  Los estados tienen sus propios portales de contratación y además la administración federal publica aquellos contratos en los que aporta capital. 
           #context1
             .ui.two.item.menu#button-tabs
               a.item.active(data-tab='mapa') Mapa
@@ -159,6 +166,7 @@ block content
             .content-title-inner Ranking de Municipios
           p
               | Cada municipio puede tener varias unidades compradoras que gestionando dinero federal, evaluando los contratos que estas gestionan se arma este índice.
+          p  Los municipios también tiene capacidad de contratación, y si bien sus portales de publicación aún son muy básicos, podemos mostrar sus los datos de aquellos contrataos en los que participa la administración federal. 
           table#tableTopMunicipios.ui.table.unstackable
             thead
               tr
@@ -188,7 +196,7 @@ block content
           h3.ui.header.content-title
             .content-title-inner Ranking de Bancos de Inversión
           p
-              | Alrededor de unos 800 contratos declaran contar con dinero provisto por bancos internacionales de inversión, este es el ranking de transparencia para esos contratos agrupado por banco.
+              |  Los bancos de inversión internacionales son un actor, que si bien no participa en muchos contratos estos son de alta relevancia. 
           table#tableTopBancos.ui.table.unstackable
             thead
               tr

@@ -2,55 +2,23 @@ $(document)
   .ready(function() {
 
         var barChartData = {
-            labels: ['2015', '2016', '2017'],
+            labels: ['2011', '2012', '2013', '2014', '2015', '2016', '2017','2018'],
             datasets: [{
-                label: '0 - 25',
+                label: 'Puntaje bajo (23 a 39)',
                 backgroundColor: "#bd0026",
-                data: [
-                    837203,
-                    487627,
-                    298376,
-                    764539,
-                    109276,
-                    193764,
-                    983275
-                ]
+                data: [276, 402, 259, 223, 364, 304, 209, 127]
             }, {
-                label: '25 - 50',
+                label: 'Puntaje regular (40 a 56)',
                 backgroundColor: "#fd8d3c",
-                data: [
-                    293802,
-                    476297,
-                    764862,
-                    103172,
-                    476308,
-                    632836,
-                    298467
-                ]
+                data:  [29196, 43512, 46866, 54769, 70294, 79971, 61609, 30569]
             }, {
-                label: '50 - 75',
+                label: 'Puntaje bueno (57 - 72)',
                 backgroundColor: "#feb24c",
-                data: [
-                    648293,
-                    209365,
-                    679733,
-                    698753,
-                    475662,
-                    857262,
-                    194765
-                ]
+                data: [6374, 10059, 10703, 13502, 12396, 13607, 10096, 5381]
             }, {
-                label: '75 - 100',
+                label: 'Puntaje alto (73 - 88)',
                 backgroundColor: "#ffeda0",
-                data: [
-                    948732,
-                    847629,
-                    937290,
-                    582694,
-                    926534,
-                    127413,
-                    139473
-                ]
+                data:  [6891, 12297, 14168, 19583, 20326, 14694, 12467, 7300]
             }]
 
         };
@@ -81,11 +49,10 @@ $(document)
                         stacked: true,
                         scaleLabel: {
                             display: true,
-                            labelString: 'Importe'
+                            labelString: 'Cantidad de contratos'
                         }
                     }]
                 }
             }
         });
 });
-
