@@ -1,5 +1,6 @@
 # Todos los Contratos
 
+## Este repositorio está archivado. El código se ha unificado con QuienEsQuien.wiki, https://github.com/ProjectPODER/qqw-poppins en el archivo `views/toloco.hbs`
 
 ## Instalación
 Requiere mongodb, nodejs y npm
